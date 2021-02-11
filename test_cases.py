@@ -26,9 +26,7 @@ class test_cases():
 
     def processResponse(self):
         while True:
-            ret = self.parser.log_and_parse(self.queue)
-            if(ret):
-                self.log.debug(ret)
+            self.parser.log_and_parse(self.queue)
             time.sleep(0.05)
 #wait_time: Time to wait for response
 #mode: Key or Keyless
