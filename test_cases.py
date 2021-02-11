@@ -42,12 +42,12 @@ class test_cases():
             global gpio_pins
             self.hardware.enable_gpio(gpio_pins[0])
             if(self.parser.getLockResult(wait_time) == False):
-                self.log.warning('Lock Failed') #Lock Failed
+                # self.log.warning('Lock Failed') #Lock Failed
                 results =  False
         else:
             self.ble.sendCommand(0x06)
             if(self.parser.getLockResult(wait_time) == False):
-                self.log.warning('Lock Failed') #Lock Failed
+                # self.log.warning('Lock Failed') #Lock Failed
                 results = False
         results_info = "Lock Test Results - Passed: %s "%(str(results))
         self.log.debug(results_info)
@@ -59,12 +59,12 @@ class test_cases():
             global gpio_pins
             self.hardware.disable_gpio(gpio_pins[0])
             if(self.parser.getUnlockResult(wait_time) == False):
-                self.log.warning('Unlock Failed') #Unlock Failed
+                # self.log.warning('Unlock Failed') #Unlock Failed
                 results = False
         else:
             self.ble.sendCommand(0x09)
             if(self.parser.getUnlockResult(wait_time) == False):
-                self.log.warning('Unlock Failed') #Unlock Failed
+                # self.log.warning('Unlock Failed') #Unlock Failed
                 results = False
         results_info = "Unlock Test Results - Passed: %s "%(str(results))
         self.log.debug(results_info)
