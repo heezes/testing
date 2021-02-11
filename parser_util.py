@@ -28,7 +28,7 @@ class response_parser():
         if(queue.empty() == False):
             data = queue.get()
             response_string = str(data[0])
-            print(response_string)
+            # print(response_string)
             if(response_string.find(UNLOCK_OPCODE) > -1):
                 self.event_obj[UNLOCK_RESPONSE].set()
                 print("***Unlock Response Received***")

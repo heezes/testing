@@ -48,7 +48,6 @@ def main():
             ret_info = test_case.doLockUnlock(mode = 0,count = 1,\
                                         timeout = 20,wait_time = 5)
             iot.sendInfo(ret_info)
-
         elif (iot.test_request == 6):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
