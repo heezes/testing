@@ -40,7 +40,9 @@ class response_parser():
                 print("***Sync Trigger Response Received***") 
             elif (response_string.find(SYNC_ENDED) > -1):
                 self.event_obj[SYNC_ENDED_RESPONSE].set()
-                print("***Sync End Response Received***") 
+                print("***Sync End Response Received***")
+            return response_string
+        return False
             # elif (response_string.find(OTA_SUCCES) > -1):
             #     self.event_obj[OTA_SUCCES_RESPONSE].set()
             #     print("***Ota Response Received***")
