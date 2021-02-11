@@ -74,9 +74,9 @@ class test_cases():
         results = True
         self.ble.sendCommand(0x08)
         if(self.parser.getUnlockResult(wait_time) == False):
-            self.log.warning('Unlock Failed') #Unlock Failed
+            self.log.warning('Sync Failed') #Unlock Failed
             results = False
-        results_info = "Unlock Test Results - Passed: %s "%(str(results))
+        results_info = "Sync Test Results - Passed: %s "%(str(results))
         self.log.debug(results_info)
         return results_info
 

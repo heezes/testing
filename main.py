@@ -31,14 +31,14 @@ def main():
             print(info)
             iot.sendInfo(info)
             iot.test_request = None
-            ret_info = test_case.doUnlock(mode = 0, wait_time = 5)
+            ret_info = test_case.doUnlock(mode = 0, wait_time = 10)
             iot.sendInfo(ret_info)
         elif (iot.test_request == 2):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
             iot.test_request = None
-            ret_info = test_case.doLock(mode = 0, wait_time = 5)
+            ret_info = test_case.doLock(mode = 0, wait_time = 10)
             iot.sendInfo(ret_info)
         elif (iot.test_request == 5):
             info = 'Executing Test Id: %d'%iot.test_request

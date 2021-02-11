@@ -28,8 +28,7 @@ class response_parser():
         if(queue.empty() == False):
             data = queue.get()
             response_string = str(data[0])
-            resp = response_string+"  %d"%response_string.find(UNLOCK_OPCODE)
-            print(resp)
+            print(response_string)
             if(response_string.find(UNLOCK_OPCODE) > -1):
                 self.event_obj[UNLOCK_RESPONSE].set()
             elif (response_string.find(LOCK_OPCODE) > -1):
@@ -44,16 +43,20 @@ class response_parser():
 
     def getUnlockResult(self, wait_time):
         if(self.event_obj[UNLOCK_RESPONSE].wait(wait_time) == True):
+            self.event_obj[UNLOCK_RESPONSE].clear()
             return True
         return False
 
     def getLockResult(self, wait_time):
         if(self.event_obj[LOCK_RESPONSE].wait(wait_time) == True):
+            self.event_obj[LOCK_RESPONSE].clear()
             return True
         return False
 
     def getSyncResult(self, wait_time):
         if(self.event_obj[SYNC_TRIGGERED_RESPONSE].wait(wait_time) == True):
             if(self.event_obj[SYNC_ENDED_RESPONSE].wait(wait_time) == True):
+                self.event_obj[SYNC_TRIGGERED_RESPONSE].clear()
+                self.event_obj[SYNC_ENDED_RESPONSE].clear()
                 return True
         return False
