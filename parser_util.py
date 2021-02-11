@@ -28,8 +28,8 @@ class response_parser():
         if(queue.empty() == False):
             data = queue.get()
             response_string = str(data[0])
-            # resp = response_string+"  %d"%response_string.find(UNLOCK_OPCODE)
-            # print(resp)
+            resp = response_string+"  %d"%response_string.find(UNLOCK_OPCODE)
+            print(resp)
             if(response_string.find(UNLOCK_OPCODE) > -1):
                 self.event_obj[UNLOCK_RESPONSE].set()
             elif (response_string.find(LOCK_OPCODE) > -1):
