@@ -24,9 +24,9 @@ class interface():
     def received_data_cb(self, handle, value):
         try:
             data = value.decode("utf-8")
-            print(data)
-            self.data_queue[0].put((data,))
-            # self.data_queue[1].put((data,))
+            # print(data)
+            # self.data_queue[0].put((data,))
+            self.data_queue[1].put((data,))
         except Exception as e:
             print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
 
