@@ -43,17 +43,17 @@ class response_parser():
 
 
     def getUnlockResult(self, wait_time):
-        if(self.event_obj[UNLOCK_RESPONSE].wait_time(wait_time) == True):
+        if(self.event_obj[UNLOCK_RESPONSE].wait(wait_time) == True):
             return True
         return False
 
     def getLockResult(self, wait_time):
-        if(self.event_obj[LOCK_RESPONSE].wait_time(wait_time) == True):
+        if(self.event_obj[LOCK_RESPONSE].wait(wait_time) == True):
             return True
         return False
 
     def getSyncResult(self, wait_time):
-        if(self.event_obj[SYNC_TRIGGERED_RESPONSE].wait_time(wait_time) == True):
-            if(self.event_obj[SYNC_ENDED_RESPONSE].wait_time(wait_time) == True):
+        if(self.event_obj[SYNC_TRIGGERED_RESPONSE].wait(wait_time) == True):
+            if(self.event_obj[SYNC_ENDED_RESPONSE].wait(wait_time) == True):
                 return True
         return False
