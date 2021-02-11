@@ -33,6 +33,52 @@ class test_cases():
         while True:
             self.parser.log_and_parse(self.queue)
             time.sleep(0.1)
+#wait_time: Time to wait for response
+#mode: Key or Keyless
+#timeout: Wait time bw two operation
+    def doLock(self, mode, wait_time):
+        results = True
+        if(mode):
+            global gpio_pins
+            self.hardware.enable_gpio(gpio_pins[0])
+            if(self.parser.getLockResult(wait_time) == False):
+                self.log.warning('Lock Failed') #Lock Failed
+                results =  False
+        else:
+            self.ble.sendCommand(0x06)
+            if(self.parser.getLockResult(wait_time) == False):
+                self.log.warning('Lock Failed') #Lock Failed
+                results = False
+        results_info = "Lock Test Results - Passed: %s "%(str(results))
+        self.log.debug(results_info)
+        return results_info
+
+    def doUnlock(self, mode, wait_time):
+        results = True
+        if(mode):
+            global gpio_pins
+            self.hardware.disable_gpio(gpio_pins[0])
+            if(self.parser.getUnlockResult(wait_time) == False):
+                self.log.warning('Unlock Failed') #Unlock Failed
+                results = False
+        else:
+            self.ble.sendCommand(0x09)
+            if(self.parser.getUnlockResult(wait_time) == False):
+                self.log.warning('Unlock Failed') #Unlock Failed
+                results = False
+        results_info = "Unlock Test Results - Passed: %s "%(str(results))
+        self.log.debug(results_info)
+        return results_info
+
+    def doSyncTrigger(self, wait_time):
+        results = True
+        self.ble.sendCommand(0x08)
+        if(self.parser.getUnlockResult(wait_time) == False):
+            self.log.warning('Unlock Failed') #Unlock Failed
+            results = False
+        results_info = "Unlock Test Results - Passed: %s "%(str(results))
+        self.log.debug(results_info)
+        return results_info
 
     def doLockUnlock(self, mode, count, timeout, wait_time):
         self.log.debug('Performing Lock/Unlock rest %d times', count)
@@ -47,7 +93,7 @@ class test_cases():
                     break
                 time.sleep(timeout)
                 self.hardware.toggle_gpio(gpio_pins[0])
-                if(self.parser.getUnlockResult(wait_time) == False):
+                if(self.parser.getLockResult(wait_time) == False):
                     self.log.warning('Lock Failed') #Lock Failed
                     results.append(False)
                     break
@@ -59,7 +105,7 @@ class test_cases():
                     break
                 time.sleep(timeout)
                 self.ble.sendCommand(0x06)
-                if(self.parser.getUnlockResult(wait_time) == False):
+                if(self.parser.getLockResult(wait_time) == False):
                     self.log.warning('Lock Failed') #Lock Failed
                     results.append(False)
                     break
@@ -68,7 +114,7 @@ class test_cases():
         for i in range(len(results)):
             if(results[i]):
                 passed_test =+ 1
-        results_info = "Test Results(%d/%d) - Passed: %d Failed: %d"%(count, len(results), passed_test, \
+        results_info = "Lock/Unlock Test Results(%d/%d) - Passed: %d Failed: %d"%(count, len(results), passed_test, \
                         len(results)-passed_test)
         self.log.debug(results_info)
         return results_info

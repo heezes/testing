@@ -1,14 +1,28 @@
 import time
+import threading
 
 #":;<=>?@"
 UNLOCK_OPCODE   = "UNLOCKED"#":::"
 LOCK_OPCODE     = "LOCKED"#";;;"
+SYNC_TRIGGERED  = "Sync Task Triggered"
+SYNC_ENDED      = "Sync Task Finished"
+OTA_SUCCES      = ""
+
+TOTAL_RESPONSES =   5
+
+LOCK_RESPONSE               =   0
+UNLOCK_RESPONSE             =   1
+SYNC_TRIGGERED_RESPONSE     =   2
+SYNC_ENDED_RESPONSE         =   3
+OTA_SUCCES_RESPONSE         =   3
+
 
 
 class response_parser():
     def __init__(self):
-        self.unlock = None
-        self.lock = None
+        self.responseArray = {}
+        for i in range(TOTAL_RESPONSES):
+            self.responseArray[i].event_obj = threading.Event()
 
     def log_and_parse(self, queue):
         if(queue.empty() == False):
@@ -17,34 +31,29 @@ class response_parser():
             # resp = response_string+"  %d"%response_string.find(UNLOCK_OPCODE)
             # print(resp)
             if(response_string.find(UNLOCK_OPCODE) > -1):
-                # print("UNLOCK Received")
-                self.unlock = 1
+                self.responseArray[UNLOCK_RESPONSE].event_obj.set()
             elif (response_string.find(LOCK_OPCODE) > -1):
-                # print("LOCKED Received")
-                self.lock = 1
+                self.responseArray[LOCK_RESPONSE].event_obj.set()
+            elif (response_string.find(SYNC_TRIGGERED) > -1):
+                self.responseArray[SYNC_TRIGGERED_RESPONSE].event_obj.set()
+            elif (response_string.find(SYNC_ENDED) > -1):
+                self.responseArray[SYNC_ENDED_RESPONSE].event_obj.set()
+            elif (response_string.find(OTA_SUCCES) > -1):
+                self.responseArray[OTA_SUCCES_RESPONSE].event_obj.set()
+
 
     def getUnlockResult(self, wait_time):
-        if(self.unlock == True):
-            self.unlock = None
+        if(self.responseArray[UNLOCK_RESPONSE].event_obj.wait_time(wait_time) == True):
             return True
-        else:
-            #wait for the response
-            time.sleep(wait_time)
-            if(self.unlock == True):
-                self.unlock = None
-                return True
-            else:
-                return False
+        return False
 
     def getLockResult(self, wait_time):
-        if(self.lock == True):
-            self.lock = None
+        if(self.responseArray[LOCK_RESPONSE].event_obj.wait_time(wait_time) == True):
             return True
-        else:
-            #wait for the response
-            time.sleep(wait_time)
-            if(self.lock == True):
-                self.lock = None
+        return False
+
+    def getSyncResult(self, wait_time):
+        if(self.responseArray[SYNC_TRIGGERED_RESPONSE].event_obj.wait_time(wait_time) == True):
+            if(self.responseArray[SYNC_ENDED_RESPONSE].event_obj.wait_time(wait_time) == True):
                 return True
-            else:
-                return False
+        return False

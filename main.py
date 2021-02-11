@@ -31,35 +31,15 @@ def main():
             print(info)
             iot.sendInfo(info)
             iot.test_request = None
-            ret_info = test_case.doLockUnlock(mode = 0,count = 1,\
-                                        timeout = 20,wait_time = 5)
+            ret_info = test_case.doUnlock(mode = 0, wait_time = 5)
             iot.sendInfo(ret_info)
         elif (iot.test_request == 2):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
             iot.test_request = None
-            ret_info = test_case.doLockUnlock(mode = 0,count = 1,\
-                                        timeout = 20,wait_time = 5)
+            ret_info = test_case.doLock(mode = 0, wait_time = 5)
             iot.sendInfo(ret_info)
-        elif (iot.test_request == 3):
-            info = 'Executing Test Id: %d'%iot.test_request
-            print(info)
-            iot.sendInfo(info)
-            iot.test_request = None
-            ret_info = test_case.doLockUnlock(mode = 0,count = 1,\
-                                        timeout = 20,wait_time = 5)
-            iot.sendInfo(ret_info)
-
-        elif (iot.test_request == 4):
-            info = 'Executing Test Id: %d'%iot.test_request
-            print(info)
-            iot.sendInfo(info)
-            iot.test_request = None
-            ret_info = test_case.doLockUnlock(mode = 0,count = 1,\
-                                        timeout = 20,wait_time = 5)
-            iot.sendInfo(ret_info)
-
         elif (iot.test_request == 5):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
@@ -74,23 +54,18 @@ def main():
             print(info)
             iot.sendInfo(info)
             iot.test_request = None
-            ret_info = test_case.doLockUnlock(mode = 0,count = 1,\
-                                        timeout = 20,wait_time = 5)
+            ret_info = test_case.doSyncTrigger(wait_time = 15*60)
             iot.sendInfo(ret_info)
 
-        # elif (iot.test_request == 7):
-        # elif (iot.test_request == 8):
-        # elif (iot.test_request == 9):
-
-import log_one
-import log_two
+# import log_one
+# import log_two
 
 if __name__ == "__main__":
-    one = log_one.my_log_one()
-    two = log_two.my_log_two()
-    one.print_info()
-    two.print_info()
-    # main()
+    # one = log_one.my_log_one()
+    # two = log_two.my_log_two()
+    # one.print_info()
+    # two.print_info()
+    main()
 
 '''
 Hardware Env: Raspberry Pi
