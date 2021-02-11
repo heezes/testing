@@ -32,7 +32,7 @@ class test_cases():
     def processResponse(self):
         while True:
             self.parser.log_and_parse(self.queue)
-            time.sleep(0.1)
+            time.sleep(0.05)
 #wait_time: Time to wait for response
 #mode: Key or Keyless
 #timeout: Wait time bw two operation
