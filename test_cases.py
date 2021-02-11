@@ -12,22 +12,17 @@ class test_cases():
         self.queue = queue
         self.parser = parser_util.response_parser()
         self.hardware = test_hardware_interface.hardware(gpio_pins)
-        logger = logging.getLogger('test_cases')
-        self.log = logger.setLevel(logging.INFO)
+        self.log = logging.getLogger('test_cases')
+        self.log.setLevel(logging.DEBUG)
         # create a file e
         handler = logging.FileHandler('hello.log')
-        handler.setLevel(logging.INFO)
+        handler.setLevel(logging.DEBUG)
 
         # # create a logging format
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         handler.setFormatter(formatter)
         # add the file handler to the logger
         self.log.addHandler(handler)
-
-
-        # logging.basicConfig(filename = 'debug.log', format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p',level=logging.DEBUG)
-        # self.log = logging.getLogger('test_cases')
-        # logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p',level=self.log.DEBUG)
 
     def processResponse(self):
         while True:
