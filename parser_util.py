@@ -31,14 +31,19 @@ class response_parser():
             print(response_string)
             if(response_string.find(UNLOCK_OPCODE) > -1):
                 self.event_obj[UNLOCK_RESPONSE].set()
+                print("***Unlock Response Received***")
             elif (response_string.find(LOCK_OPCODE) > -1):
                 self.event_obj[LOCK_RESPONSE].set()
+                print("***Lock Response Received***") 
             elif (response_string.find(SYNC_TRIGGERED) > -1):
                 self.event_obj[SYNC_TRIGGERED_RESPONSE].set()
+                print("***Sync Trigger Response Received***") 
             elif (response_string.find(SYNC_ENDED) > -1):
                 self.event_obj[SYNC_ENDED_RESPONSE].set()
+                print("***Sync End Response Received***") 
             elif (response_string.find(OTA_SUCCES) > -1):
                 self.event_obj[OTA_SUCCES_RESPONSE].set()
+                print("***Ota Response Received***")
 
 
     def getUnlockResult(self, wait_time):

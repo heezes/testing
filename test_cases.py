@@ -67,7 +67,7 @@ class test_cases():
                 # self.log.warning('Unlock Failed') #Unlock Failed
                 results = False
         results_info = "Unlock Test Results - Passed: %s "%(str(results))
-        self.log.debug(results_info)
+        # self.log.debug(results_info)
         return results_info
 
     def doSyncTrigger(self, wait_time):
