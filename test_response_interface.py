@@ -52,7 +52,7 @@ class interface():
         if(self.ble_interface):
             adapter = pygatt.GATTToolBackend(search_window_size=200)
             adapter.start()
-            device_info = adapter.filtered_scan(self.device_addr)
+            device_info = adapter.filtered_scan(self.device_addr, timeout=1)
             print("Connecting to device %s:%s"%(self.device_addr, device_info[0]))
             if(device_info):
                 self.device = adapter.connect(device_info[0], address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
