@@ -6,11 +6,11 @@ import test_response_interface
 import test_cases
 import logging
 from logging.handlers import RotatingFileHandler
+import sys
+import argparse
 
 BLE_INTERFACE = 1
 RTT_INTERFACE = 2
-
-device_addr = "Nokia"
 
 def logRttData(queue):
     logger = logging.getLogger('main.py')
@@ -37,11 +37,14 @@ def main():
     Queue one is used to send realtime logs to mqtt server(Can be avoided by calling publish in ble callback)
     Queue two is used to parse and record the vehicle logs
     '''
+    parser = argparse.ArgumentParser(description='Target Device Name')
+    parser.add_argument('--device_addr', action="store", dest='device_addr')
+    args = parser.parse_args()
     data_queue = []
     data_queue.append(queue.Queue())
     data_queue.append(queue.Queue())
     iot = test_mqtt.Mqtt(data_queue[0])
-    interface = test_response_interface.interface(data_queue, device_addr)
+    interface = test_response_interface.interface(data_queue, args.device_addr)
     test_case = test_cases.test_cases(data_queue[1], interface)
     x = threading.Thread(target=test_case.processResponse)
     y = threading.Thread(target=logRttData, args=(data_queue[0],))
