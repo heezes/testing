@@ -4,10 +4,11 @@ from binascii import hexlify
 import sys
 
 class interface():
-    def __init__(self, data_queue, ble_interface=True):
+    def __init__(self, data_queue, device_addr, ble_interface=True):
         #intialize the vim response mechanism
         self.device = 0
         self.data_queue = []
+        self.device_addr = device_addr
         self.data_queue.append(data_queue[0])
         self.data_queue.append(data_queue[1])
         self.ble_interface = interface #Use BLE interface
@@ -51,26 +52,29 @@ class interface():
         if(self.ble_interface):
             adapter = pygatt.GATTToolBackend(search_window_size=200)
             adapter.start()
-            self.device = adapter.connect("EC:25:3D:28:F1:EA", address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
-            self.device.register_disconnect_callback(self.Disconnected)
-            self.device.exchange_mtu(128)
-            self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75eba",\
-                            callback=self.data_handler_cb,\
-                            indication=False)
-            self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75fba",\
-                            callback=self.received_data_cb,\
-                            indication=False)
-            self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x01]), True)
-            print("Auth Command Written")
-            token = b'\x1d\x49\x00\x00'
-            self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75fba", token, True)
-            print("Authenticated")
-            # while self.opcode_response != 0x01:
-            #     pass
-            self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x0C]), True)
-            print("Enabling Debug")
-        # else:
-            #add other interface initialization
+            device_info = adapter.filtered_scan(self.device_addr)
+            print("Connecting to device %s:%s"%(self.device_addr, device_info[0]))
+            if(device_info):
+                self.device = adapter.connect(device_info[0], address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
+                self.device.register_disconnect_callback(self.Disconnected)
+                self.device.exchange_mtu(128)
+                self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75eba",\
+                                callback=self.data_handler_cb,\
+                                indication=False)
+                self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75fba",\
+                                callback=self.received_data_cb,\
+                                indication=False)
+                self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x01]), True)
+                print("Auth Command Written")
+                token = b'\x1d\x49\x00\x00'
+                self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75fba", token, True)
+                print("Authenticated")
+                # while self.opcode_response != 0x01:
+                #     pass
+                self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x0C]), True)
+                print("Enabling Debug")
+            # else:
+                #add other interface initialization
 
     """
     @brief: This function can request the target to perform an activity depending upon the command

@@ -10,6 +10,8 @@ from logging.handlers import RotatingFileHandler
 BLE_INTERFACE = 1
 RTT_INTERFACE = 2
 
+device_addr = "Nokia"
+
 def logRttData(queue):
     logger = logging.getLogger('main.py')
     logger.setLevel(logging.DEBUG)
@@ -39,7 +41,7 @@ def main():
     data_queue.append(queue.Queue())
     data_queue.append(queue.Queue())
     iot = test_mqtt.Mqtt(data_queue[0])
-    interface = test_response_interface.interface(data_queue)
+    interface = test_response_interface.interface(data_queue, device_addr)
     test_case = test_cases.test_cases(data_queue[1], interface)
     x = threading.Thread(target=test_case.processResponse)
     y = threading.Thread(target=logRttData, args=(data_queue[0],))
