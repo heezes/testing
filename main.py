@@ -52,7 +52,10 @@ def main():
     y.start()
     while True:
         time.sleep(0.5)
-        if(iot.test_request == 1):
+        if iot.test_request == 0:
+            #push data to git and exit program
+            os.exit(0)
+        elif(iot.test_request == 1):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
