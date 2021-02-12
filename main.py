@@ -56,6 +56,7 @@ def main():
         time.sleep(0.5)
         if iot.test_request == 0:
             #push data to git and exit program
+            pygit.update()
             pygit.repos()
             r = pygit.load('testing')
             r.add_all() # stage all changes for commit
