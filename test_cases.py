@@ -16,7 +16,7 @@ class test_cases():
         self.log = logging.getLogger('test_cases')
         self.log.setLevel(logging.DEBUG)
         # create a file e
-        handler = RotatingFileHandler('report.log', maxBytes=5*1024, backupCount=1)
+        handler = RotatingFileHandler('report.log', maxBytes=5*1024*1024, backupCount=1)
         handler.setLevel(logging.DEBUG)
 
         # # create a logging format
