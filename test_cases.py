@@ -1,4 +1,5 @@
 import logging
+from logging.handlers import RotatingFileHandler
 import parser_util
 import test_hardware_interface
 import time
@@ -15,7 +16,7 @@ class test_cases():
         self.log = logging.getLogger('test_cases')
         self.log.setLevel(logging.DEBUG)
         # create a file e
-        handler = logging.FileHandler('hello.log')
+        handler = RotatingFileHandler('report.log', maxBytes=5*1024, backupCount=1)
         handler.setLevel(logging.DEBUG)
 
         # # create a logging format
@@ -28,9 +29,12 @@ class test_cases():
         while True:
             self.parser.log_and_parse(self.queue)
             time.sleep(0.05)
-#wait_time: Time to wait for response
-#mode: Key or Keyless
-#timeout: Wait time bw two operation
+
+    """
+    @brief: This function should be called to perform a lock activity and checks if it succeded
+    @param: mode: 0:Key based access, 1: Keyless access
+    @param: wait_time: Time to wait for the response (seconds)
+    """
     def doLock(self, mode, wait_time):
         results = True
         if(mode):
@@ -48,6 +52,11 @@ class test_cases():
         self.log.debug(results_info)
         return results_info
 
+    """
+    @brief: This function should be called to perform a unlock activity and checks if it succeded
+    @param: mode: 0:Key based access, 1: Keyless access
+    @param: wait_time: Time to wait for the response (seconds)
+    """
     def doUnlock(self, mode, wait_time):
         results = True
         if(mode):
@@ -65,6 +74,10 @@ class test_cases():
         self.log.debug(results_info)
         return results_info
 
+    """
+    @brief: This function should be called to perform a sync activity and checks if it succeded
+    @param: wait_time: Time to wait for the response (seconds)
+    """
     def doSyncTrigger(self, wait_time):
         results = True
         self.ble.sendCommand(0x08)
@@ -75,6 +88,13 @@ class test_cases():
         self.log.debug(results_info)
         return results_info
 
+    """
+    @brief: This function should be called to perform a lock/unlock activity in loop and checks if it succeded
+    @param: mode: 0:Key based access, 1: Keyless access
+    @param: count: No of time lock/unlock combination is repeated
+    @param: timeout: Time to wait between each lock/unlock
+    @param: wait_time: Time to wait for the response (seconds)
+    """
     def doLockUnlock(self, mode, count, timeout, wait_time):
         self.log.debug('Performing Lock/Unlock rest %d times', count)
         results = []

@@ -1,5 +1,3 @@
-# import test_logger
-# import test_cases
 import queue
 import threading
 import time
@@ -7,6 +5,7 @@ import test_mqtt
 import test_response_interface
 import test_cases
 import logging
+from logging.handlers import RotatingFileHandler
 
 BLE_INTERFACE = 1
 RTT_INTERFACE = 2
@@ -15,7 +14,7 @@ def logRttData(queue):
     logger = logging.getLogger('main.py')
     logger.setLevel(logging.DEBUG)
     # create a file e
-    handler = logging.FileHandler('rtt.log')
+    handler = RotatingFileHandler('rtt.log', maxBytes=5*1024, backupCount=1)
     handler.setLevel(logging.DEBUG)
 
     # # create a logging format
@@ -78,14 +77,7 @@ def main():
             ret_info = test_case.doSyncTrigger(wait_time = 15*60)
             iot.sendInfo(ret_info)
 
-# import log_one
-# import log_two
-
 if __name__ == "__main__":
-    # one = log_one.my_log_one()
-    # two = log_two.my_log_two()
-    # one.print_info()
-    # two.print_info()
     main()
 
 '''

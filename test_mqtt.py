@@ -38,9 +38,17 @@ class Mqtt():
     #                 self.mqttc.loop_stop()
     #                 self.mqtt_connected = False
 
+    """
+    @brief: Send message to the remote  mqtt server
+    @param: message: Data to be sent
+    """
     def sendInfo(self, message):
         self.mqttc.publish(INFO_PUBLISH_TOPIC,str(message), qos=1, retain=False)
 
+    """
+    @brief: Check the string for numeric value
+    @param: s: Checks if string is numeric(atoi())
+    """
     def isNumeric(self, s):
         s = s.strip()
         try:
@@ -49,12 +57,25 @@ class Mqtt():
         except:
             return False
 
+    """
+    @brief: Callback function for mqtt connection
+    @param: client: client handle
+    @param: userdata: data passed to user via stack
+    @param: flags: mqtt flag
+    @params: rc: return code
+    """
     def on_connect(self, client, userdata, flags, rc):
         # self.mqtt_connected = True
         # Subscribing in on_connect() means that if we lose the connection and
         # reconnect then subscriptions will be renewed.
         client.subscribe(SUBSCRIPTION_TOPIC)
 
+    """
+    @brief: Callback function when data is recieved on subscribed topic
+    @param: client: client handle
+    @param: userdata: data passed to user via stack
+    @param: msg: data received on subscribed topic
+    """
     def on_message(self, client, userdata, msg):
         print(msg.topic+" "+str(msg.payload))
         try:
@@ -68,7 +89,12 @@ class Mqtt():
         # if(self.isNumeric(str(msg.payload))):
         #     self.test_request = int(msg.payload.strip())
 
-
+    """
+    @brief: Callback function for mqtt disconnection
+    @param: client: client handle
+    @param: userdata: data passed to user via stack
+    @params: rc: return code
+    """
     def on_disconenct(self, client, userdata, rc):
         print("Disconected with result code: "+str(rc))
         # self.mqtt_connected = False

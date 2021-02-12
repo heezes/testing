@@ -13,26 +13,40 @@ class interface():
         self.ble_interface = interface #Use BLE interface
         self.opcode_response = None #BLE opcode response for a command
         self.connectToInterface(interface)
-
+    """
+    @brief: Callback function for charateristic notification
+    @param: handle: characteristic handle
+    @param: value: encoded data
+    """
     def data_handler_cb(self, handle, value):
         try:
             self.opcode_response = value.decode("utf-8")
         except Exception as e:
             print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
 
-
+    """
+    @brief: Callback function for charateristic notification
+    @param: handle: characteristic handle
+    @param: value: encoded data
+    """
     def received_data_cb(self, handle, value):
         try:
             data = value.decode("utf-8")
-            # print(data)
             self.data_queue[0].put((data,))
             self.data_queue[1].put((data,))
         except Exception as e:
             print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
 
+    """
+    @brief: Callback function for disconnection notification
+    """
     def Disconnected(self):
         print ("disconnected from BLE")
 
+    """
+    @brief: This function initializes the response interface
+    @param: interface: Response interface(For now only ble is supported. Rtt physical via openocd could be an option)
+    """
     def connectToInterface(self, interface):
         if(self.ble_interface):
             adapter = pygatt.GATTToolBackend(search_window_size=200)
@@ -58,6 +72,10 @@ class interface():
         # else:
             #add other interface initialization
 
+    """
+    @brief: This function can request the target to perform an activity depending upon the command
+    @param: command: Ble command to perform a certain activity
+    """
     def sendCommand(self, command):
         if(self.device._connected):
             self.opcode_response = None
