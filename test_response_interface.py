@@ -2,6 +2,7 @@ import pygatt
 import time
 from binascii import hexlify
 import sys
+import json
 
 class interface():
     def __init__(self, data_queue, device_addr, ble_interface=True):
@@ -53,9 +54,10 @@ class interface():
             adapter = pygatt.GATTToolBackend(search_window_size=200)
             adapter.start()
             device_info = adapter.filtered_scan(self.device_addr, timeout=1)
-            print("Connecting to device %s:%s"%(self.device_addr, device_info[0]))
+            dev_info = device_info[0]
+            print("Connecting to device %s:%s"%(self.device_addr, dev_info['address']))
             if(device_info):
-                self.device = adapter.connect(device_info[0], address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
+                self.device = adapter.connect(dev_info['address'], address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
                 self.device.register_disconnect_callback(self.Disconnected)
                 self.device.exchange_mtu(128)
                 self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75eba",\
