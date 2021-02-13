@@ -9,7 +9,8 @@ from logging.handlers import RotatingFileHandler
 import sys
 import argparse
 import os
-import pygit
+import sh
+
 
 BLE_INTERFACE = 1
 RTT_INTERFACE = 2
@@ -55,13 +56,11 @@ def main():
     while True:
         time.sleep(0.5)
         if iot.test_request == 0:
-            #push data to git and exit program
-            r = pygit.load('testing')
-            r.add_all() # stage all changes for commit
-            r.commit(message='Minor Changes:    \
-                            ->Syncing log files') # commit changes. Press enter to accept default message
-            r.push() # perform push action
-            os.exit(0)
+            git = sh.git.bake(_cwd='/home/pi/Desktop/testing')
+            git.add("-A")
+            git.commit(m="Log file Syncing(Push made from testing/main.py)")
+            git.push()
+            os._exit(os.EX_OK)
         elif(iot.test_request == 1):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
