@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo python3 main.py --device_addr "2818117-893931543"
+sudo python3 main.py --device_addr "2621513-893931545"
