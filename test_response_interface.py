@@ -14,7 +14,7 @@ class interface():
         self.data_queue.append(data_queue[1])
         self.ble_interface = interface #Use BLE interface
         self.opcode_response = None #BLE opcode response for a command
-        self.connectToInterface(interface)
+        #self.connectToInterface(interface)
     """
     @brief: Callback function for charateristic notification
     @param: handle: characteristic handle
