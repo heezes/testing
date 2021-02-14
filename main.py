@@ -55,7 +55,8 @@ def main():
     y.start()
     while True:
         time.sleep(0.5)
-        if iot.test_request == 0:
+        if iot.test_request == 6:
+            print("Pushing data to git")
             git = sh.git.bake(_cwd='/home/pi/Desktop/testing')
             git.add("-A")
             git.commit(m="Log file Syncing(Push made from testing/main.py)")
@@ -79,8 +80,9 @@ def main():
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
+            loop_count = iot.test_request - 100
             iot.test_request = 0
-            ret_info = test_case.doLockUnlock(mode = 0,count = (iot.test_request-100),\
+            ret_info = test_case.doLockUnlock(mode = 0,count = loop_count,\
                                         timeout = 1,wait_time = 5)
             iot.sendInfo(ret_info)
         elif (iot.test_request == 5):
