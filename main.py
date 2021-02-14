@@ -19,7 +19,7 @@ def logRttData(queue):
     logger = logging.getLogger('main.py')
     logger.setLevel(logging.DEBUG)
     # create a file e
-    handler = RotatingFileHandler('rtt.log', maxBytes=5*1024, backupCount=1)
+    handler = RotatingFileHandler('rtt.log', maxBytes=5*1024*1024, backupCount=1)
     handler.setLevel(logging.DEBUG)
 
     # # create a logging format
