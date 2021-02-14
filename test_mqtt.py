@@ -8,7 +8,7 @@ INFO_PUBLISH_TOPIC  =   "vim/info_publish"
 class Mqtt():
     def __init__(self, queue):
         self.queue = queue
-        self.test_request = None
+        self.test_request = 0
         self.mqttc  = mqtt.Client()
         self.mqttc.username_pw_set(username='munnvxsn', password='unegqTSYxMKO')
         self.mqttc.on_connect = self.on_connect
