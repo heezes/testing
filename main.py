@@ -75,15 +75,15 @@ def main():
             iot.test_request = None
             ret_info = test_case.doLock(mode = 0, wait_time = 10)
             iot.sendInfo(ret_info)
-        elif (iot.test_request == 5):
+        elif (iot.test_request > 100):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
             iot.test_request = None
-            ret_info = test_case.doLockUnlock(mode = 0,count = 1,\
-                                        timeout = 20,wait_time = 5)
+            ret_info = test_case.doLockUnlock(mode = 0,count = (iot.test_request-100),\
+                                        timeout = 1,wait_time = 5)
             iot.sendInfo(ret_info)
-        elif (iot.test_request == 6):
+        elif (iot.test_request == 5):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
