@@ -65,21 +65,21 @@ def main():
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
-            iot.test_request = None
+            iot.test_request = 0
             ret_info = test_case.doUnlock(mode = 0, wait_time = 10)
             iot.sendInfo(ret_info)
         elif (iot.test_request == 2):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
-            iot.test_request = None
+            iot.test_request = 0
             ret_info = test_case.doLock(mode = 0, wait_time = 10)
             iot.sendInfo(ret_info)
         elif (iot.test_request > 100):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
-            iot.test_request = None
+            iot.test_request = 0
             ret_info = test_case.doLockUnlock(mode = 0,count = (iot.test_request-100),\
                                         timeout = 1,wait_time = 5)
             iot.sendInfo(ret_info)
@@ -87,7 +87,7 @@ def main():
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
-            iot.test_request = None
+            iot.test_request = 0
             ret_info = test_case.doSyncTrigger(wait_time = 15*60)
             iot.sendInfo(ret_info)
 

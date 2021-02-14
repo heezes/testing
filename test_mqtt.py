@@ -79,7 +79,7 @@ class Mqtt():
     def on_message(self, client, userdata, msg):
         print(msg.topic+" "+str(msg.payload))
         try:
-            if(self.test_request == None):
+            if(self.test_request == 0):
                 self.test_request = int(msg.payload)
                 print(self.test_request)
             else:
