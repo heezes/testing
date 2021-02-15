@@ -10,3 +10,16 @@
 2021-02-15 11:52:11,038 - test_cases - DEBUG - Lock Test Results - Passed: True 
 2021-02-15 11:52:13,171 - test_cases - DEBUG - Unlock Test Results - Passed: True 
 2021-02-15 11:52:25,504 - test_cases - DEBUG - Lock Test Results - Passed: True 
+2021-02-15 12:35:55,638 - test_cases - DEBUG - Unlock Test Results - Passed: True 
+2021-02-15 12:36:02,547 - test_cases - DEBUG - Lock Test Results - Passed: True 
+2021-02-15 12:36:13,218 - test_cases - DEBUG - Unlock Failed
+2021-02-15 12:36:13,221 - test_cases - DEBUG - Unlock Test Results - Passed: False 
+2021-02-15 12:36:19,395 - test_cases - DEBUG - Unlock Test Results - Passed: True 
+2021-02-15 12:36:36,236 - test_cases - DEBUG - Lock Test Results - Passed: True 
+2021-02-15 12:36:47,393 - test_cases - DEBUG - Unlock Failed
+2021-02-15 12:36:47,395 - test_cases - DEBUG - Unlock Test Results - Passed: False 
+2021-02-15 12:36:48,553 - test_cases - DEBUG - Unlock Test Results - Passed: True 
+2021-02-15 12:36:57,891 - test_cases - DEBUG - Lock Test Results - Passed: True 
+2021-02-15 12:37:08,419 - test_cases - DEBUG - Performing Lock/Unlock rest 3 times
+2021-02-15 12:37:15,736 - test_cases - DEBUG - Lock Failed
+2021-02-15 12:37:15,739 - test_cases - DEBUG - Lock/Unlock Test Results(3/1) - Passed: 0 Failed: 1
