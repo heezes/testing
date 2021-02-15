@@ -10,7 +10,7 @@ class Mqtt():
     def __init__(self, queue):
         self.queue = queue
         self.test_request = 0
-        self.test_arg = []
+        self.test_arg = [1,2,3,4,5]
         self.mqttc  = mqtt.Client()
         self.mqttc.username_pw_set(username='munnvxsn', password='unegqTSYxMKO')
         self.mqttc.on_connect = self.on_connect
@@ -83,13 +83,17 @@ class Mqtt():
         try:
             if(self.test_request == 0):
                 self.test_arg.clear()
-                request_json = json.loads(str(msg.payload))
+                request_json = json.loads(msg.payload)
                 self.test_request = request_json['cmd']
-                for i in range(len(request_json['arg'])):
-                    self.test_arg.append(request_json['arg'][i])
+                if 'arg' in request_json:
+                    for i in range(len(request_json['arg'])):
+                        self.test_arg.append(request_json['arg'][i])
+                else:
+                    self.test_arg.append(0)
             else:
                 self.test_request("Already Executing Test id: %d"%self.test_request)
-        except:
+        except Exception as e :
+            print(e.msg, e.args)
             pass
         # if(self.isNumeric(str(msg.payload))):
         #     self.test_request = int(msg.payload.strip())
