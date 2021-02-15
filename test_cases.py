@@ -130,7 +130,7 @@ class test_cases():
         print(results)
         for i in range(len(results)):
             if(results[i]):
-                passed_test =+ 1
+                passed_test = passed_test + 1
         results_info = "Lock/Unlock Test Results(%d/%d) - Passed: %d Failed: %d"%(count, len(results), passed_test, \
                         len(results)-passed_test)
         self.log.debug(results_info)
