@@ -99,7 +99,7 @@ class test_cases():
         self.log.debug('Performing Lock/Unlock rest %d times', count)
         results = []
         for i in range(count):
-            time.sleep(float(timeout/2))
+            time.sleep(float(timeout))
             if(mode):
                 global gpio_pins
                 self.hardware.toggle_gpio(gpio_pins[0])
