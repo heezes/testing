@@ -3,6 +3,8 @@ import time
 from binascii import hexlify
 import sys
 import json
+import logging
+from logging.handlers import RotatingFileHandler
 
 class interface():
     def __init__(self, data_queue, device_addr, ble_interface=True):
@@ -15,6 +17,19 @@ class interface():
         self.ble_interface = interface #Use BLE interface
         self.opcode_response = None #BLE opcode response for a command
         self.connectToInterface(interface)
+        self.logger = logging.getLogger('test_response_interface.py')
+        self.logger.setLevel(logging.DEBUG)
+        # create a file e
+        handler = RotatingFileHandler('rtt.log', maxBytes=5*1024*1024, backupCount=1)
+        handler.setLevel(logging.DEBUG)
+
+        # # create a logging format
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        # add the file handler to the logger
+        self.logger.addHandler(handler)
+
+
     """
     @brief: Callback function for charateristic notification
     @param: handle: characteristic handle
@@ -34,8 +49,9 @@ class interface():
     def received_data_cb(self, handle, value):
         try:
             data = value.decode("utf-8")
-            self.data_queue[0].put((data,))
+            # self.data_queue[0].put((data,))
             self.data_queue[1].put((data,))
+            self.logger.debug(data)
         except Exception as e:
             print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
 
