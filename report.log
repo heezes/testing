@@ -1,3 +1,4 @@
-2021-02-15 14:21:03,405 - test_cases - DEBUG - Performing Lock/Unlock rest 3 times
-2021-02-15 14:21:13,962 - test_cases - DEBUG - Unlock Failed
-2021-02-15 14:21:13,972 - test_cases - DEBUG - Lock/Unlock Test Results(3/2) - Passed: 1 Failed: 1
+2021-02-15 14:30:28,592 - test_cases - DEBUG - Performing Lock/Unlock rest 3 times
+2021-02-15 14:30:43,128 - test_cases - DEBUG - Unlock Failed
+2021-02-15 14:30:43,132 - test_cases - DEBUG - Lock/Unlock Test Results(3/3) - Passed: 2 Failed: 1
+2021-02-15 14:30:53,440 - test_cases - DEBUG - Lock Test Results - Passed: True 
