@@ -127,6 +127,7 @@ class test_cases():
                     break
             results.append(True)
         passed_test = 0
+        print(results)
         for i in range(len(results)):
             if(results[i]):
                 passed_test =+ 1
