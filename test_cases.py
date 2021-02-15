@@ -35,7 +35,7 @@ class test_cases():
     @param: mode: 0:Key based access, 1: Keyless access
     @param: wait_time: Time to wait for the response (seconds)
     """
-    def doLock(self, mode, wait_time):
+    def doLock(self, mode = 0, wait_time = 10):
         results = True
         if(mode):
             global gpio_pins
@@ -57,7 +57,7 @@ class test_cases():
     @param: mode: 0:Key based access, 1: Keyless access
     @param: wait_time: Time to wait for the response (seconds)
     """
-    def doUnlock(self, mode, wait_time):
+    def doUnlock(self, mode = 0, wait_time = 10):
         results = True
         if(mode):
             global gpio_pins
@@ -78,7 +78,7 @@ class test_cases():
     @brief: This function should be called to perform a sync activity and checks if it succeded
     @param: wait_time: Time to wait for the response (seconds)
     """
-    def doSyncTrigger(self, wait_time):
+    def doSyncTrigger(self, wait_time = 15*60):
         results = True
         self.ble.sendCommand(0x08)
         if(self.parser.getUnlockResult(wait_time) == False):
@@ -95,7 +95,7 @@ class test_cases():
     @param: timeout: Time to wait between each lock/unlock
     @param: wait_time: Time to wait for the response (seconds)
     """
-    def doLockUnlock(self, mode, count, timeout, wait_time):
+    def doLockUnlock(self, mode = 0, count = 10, timeout = 2, wait_time = 10):
         self.log.debug('Performing Lock/Unlock rest %d times', count)
         results = []
         for i in range(count):

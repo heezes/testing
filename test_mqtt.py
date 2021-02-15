@@ -1,6 +1,7 @@
 import paho.mqtt.client as mqtt
 import time
 import sys
+import json
 
 SUBSCRIPTION_TOPIC  =   "vim/subscribe"
 DEBUG_PUBLISH_TOPIC =   "vim/debug_publish"
@@ -9,6 +10,7 @@ class Mqtt():
     def __init__(self, queue):
         self.queue = queue
         self.test_request = 0
+        self.test_arg = []
         self.mqttc  = mqtt.Client()
         self.mqttc.username_pw_set(username='munnvxsn', password='unegqTSYxMKO')
         self.mqttc.on_connect = self.on_connect
@@ -80,8 +82,11 @@ class Mqtt():
         print(msg.topic+" "+str(msg.payload))
         try:
             if(self.test_request == 0):
-                self.test_request = int(msg.payload)
-                print(self.test_request)
+                self.test_arg.clear()
+                request_json = json.loads(str(msg.payload))
+                self.test_request = request_json['cmd']
+                for i in range(len(request_json['arg'])):
+                    self.test_arg.append(request_json['arg'][i])
             else:
                 self.test_request("Already Executing Test id: %d"%self.test_request)
         except:

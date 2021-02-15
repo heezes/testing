@@ -67,30 +67,41 @@ def main():
             print(info)
             iot.sendInfo(info)
             iot.test_request = 0
-            ret_info = test_case.doUnlock(mode = 0, wait_time = 10)
+            if(iot.test_arg[0]>1):
+                ret_info = test_case.doUnlock()
+            else:
+                ret_info = test_case.doUnlock(mode = iot.test_arg[0], wait_time = iot.test_arg[1])
             iot.sendInfo(ret_info)
         elif (iot.test_request == 2):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
             iot.test_request = 0
-            ret_info = test_case.doLock(mode = 0, wait_time = 10)
+            if(iot.test_arg[0]>1):
+                ret_info = test_case.doLock()
+            else:
+                ret_info = test_case.doLock(mode = iot.test_arg[0], wait_time = iot.test_arg[1])
             iot.sendInfo(ret_info)
-        elif (iot.test_request > 100):
+        elif (iot.test_request == 7):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
-            loop_count = iot.test_request - 100
             iot.test_request = 0
-            ret_info = test_case.doLockUnlock(mode = 0,count = loop_count,\
-                                        timeout = 1.5,wait_time = 5)
+            if(iot.test_arg[0]>1):
+                ret_info = test_case.doLockUnlock()
+            else:
+                ret_info = test_case.doLockUnlock(mode = iot.test_arg[0],count = iot.test_arg[1],\
+                                            timeout = iot.test_arg[2],wait_time = iot.test_arg[3])
             iot.sendInfo(ret_info)
         elif (iot.test_request == 5):
             info = 'Executing Test Id: %d'%iot.test_request
             print(info)
             iot.sendInfo(info)
             iot.test_request = 0
-            ret_info = test_case.doSyncTrigger(wait_time = 15*60)
+            if(iot.test_arg[0]>1):
+                ret_info = test_case.doSyncTrigger()
+            else:
+                ret_info = test_case.doSyncTrigger(wait_time = 15*60)
             iot.sendInfo(ret_info)
 
 if __name__ == "__main__":
