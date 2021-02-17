@@ -93,7 +93,7 @@ class Mqtt():
             else:
                 self.test_request("Already Executing Test id: %d"%self.test_request)
         except Exception as e :
-            print(e.msg, e.args)
+            print(e)
             pass
         # if(self.isNumeric(str(msg.payload))):
         #     self.test_request = int(msg.payload.strip())
