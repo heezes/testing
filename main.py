@@ -69,8 +69,8 @@ def main():
             if(iot.test_arg[0]>1):
                 ret_info = test_case.doLockUnlock()
             else:
-                ret_info = test_case.doLockUnlock(mode = iot.test_arg[0],count = iot.test_arg[1],\
-                                            timeout = iot.test_arg[2],wait_time = iot.test_arg[3])
+                ret_info = test_case.doLockUnlock(mode = iot.test_arg[0],count = iot.test_arg[2],\
+                                            timeout = iot.test_arg[3],wait_time = iot.test_arg[1])
             iot.sendInfo(ret_info)
         elif (iot.test_request == 5):
             info = 'Executing Test Id: %d'%iot.test_request
