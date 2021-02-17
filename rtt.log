@@ -379,3 +379,226 @@ DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
 DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
 DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
 
+2021-02-17 23:00:21,332 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#41 [#]Sync Task Triggered: 23:0:9
+DEBUG:   vSyncTaskFunction L#44 [#]Next Alarm Time: 2:0:0
+DEBUG:   vSyncTaskFunction L#47 [#]Free:66977792 Used:131072
+DEBUG:   CAN_AppInit L#229 [#]Can Stack Initialized: 1410110
+
+2021-02-17 23:00:21,440 - test_response_interface.py - DEBUG - DEBUG:   vGsmTaskFunction L#55 [#]Waking Up the Gsm Module
+
+2021-02-17 23:00:26,838 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-17 23:00:27,865 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404112268776580
+
+OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+89911190185421856080
+
+
+2021-02-17 23:00:27,975 - test_response_interface.py - DEBUG - OK
+
+
+2021-02-17 23:00:29,709 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-17 23:00:30,532 - test_response_interface.py - DEBUG - $GNGLL,,,,,173018.960,V,N*67
+
+2021-02-17 23:00:31,557 - test_response_interface.py - DEBUG - $GNGLL,,,,,173019.960,V,N*66
+
+2021-02-17 23:00:32,583 - test_response_interface.py - DEBUG - $GNGLL,,,,,173020.960,V,N*6C
+DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+
+2021-02-17 23:00:32,692 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+TEMPLATE - initialization
+
+2021-02-17 23:00:32,802 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-17 23:00:33,216 - test_response_interface.py - DEBUG - DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-17 23:00:33,530 - test_response_interface.py - DEBUG - $GNGLL,,,,,173021.960,V,N*6D
+
+2021-02-17 23:00:34,557 - test_response_interface.py - DEBUG - $GNGLL,,,,,173022.960,V,N*6E
+
+2021-02-17 23:00:35,175 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-17 23:00:35,487 - test_response_interface.py - DEBUG - $GNGLL,,,,,173023.960,V,N*6F
+
+2021-02-17 23:00:36,613 - test_response_interface.py - DEBUG - $GNGLL,,,,,173024.960,V,N*68
+
+2021-02-17 23:00:37,536 - test_response_interface.py - DEBUG - $GNGLL,,,,,173025.960,V,N*69
+
+2021-02-17 23:00:38,464 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#226 [#]IP Address: 10.113.152.121
+
+2021-02-17 23:00:38,573 - test_response_interface.py - DEBUG - $GNGLL,,,,,173026.960,V,N*6A
+
+2021-02-17 23:00:39,493 - test_response_interface.py - DEBUG - $GNGLL,,,,,173027.960,V,N*6B
+
+2021-02-17 23:00:40,517 - test_response_interface.py - DEBUG - $GNGLL,,,,,173028.960,V,N*64
+
+2021-02-17 23:00:40,729 - test_response_interface.py - DEBUG - DEBUG:   AWS_ConnectionManage L#193 -> MQTT CONFIGURING!
+
+2021-02-17 23:00:40,839 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#390 [#]FETCHING GPRS STATE
+DEBUG:   AWS_ConnectionManage L#135 -> CONNECTING TO MQTT SERVER..
+
+2021-02-17 23:00:43,089 - test_response_interface.py - DEBUG - $GNGLL,,,,,173029.960,V,N*65
+
+2021-02-17 23:00:44,011 - test_response_interface.py - DEBUG - $GNGLL,,,,,173030.960,V,N*6D
+
+2021-02-17 23:00:44,117 - test_response_interface.py - DEBUG - $GNGLL,,,,,173031.960,V,N*6C
+
+2021-02-17 23:00:48,901 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+
+2021-02-17 23:00:49,009 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+
+2021-02-17 23:00:49,119 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-17 23:00:49,446 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+
+2021-02-17 23:00:50,780 - test_response_interface.py - DEBUG - DEBUG:   vGsmTaskFunction L#36 [#]Gsm Module Going to Power Saving Mode
+DEBUG:   vGsmTaskFunction L#45 [#]Date: 21/2/17 Time: 23:0:50
+
+2021-02-17 23:01:39,849 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#41 [#]Sync Task Triggered: 23:1:39
+DEBUG:   vSyncTaskFunction L#44 [#]Next Alarm Time: 2:0:0
+
+2021-02-17 23:01:39,960 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#47 [#]Free:66977792 Used:131072
+DEBUG:   CAN_AppInit L#229 [#]Can Stack Initialized: 1488669
+DEBUG:   vGsmTaskFunction L#55 [#]Waking Up the Gsm Module
+
+2021-02-17 23:01:45,356 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-17 23:01:46,382 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404112268776580
+
+
+2021-02-17 23:01:46,491 - test_response_interface.py - DEBUG - OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+89911190185421856080
+
+OK
+
+
+2021-02-17 23:01:48,329 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-17 23:01:49,149 - test_response_interface.py - DEBUG - $GNGLL,,,,,173147.960,V,N*6C
+
+2021-02-17 23:01:50,076 - test_response_interface.py - DEBUG - $GNGLL,,,,,173148.960,V,N*63
+
+2021-02-17 23:01:51,202 - test_response_interface.py - DEBUG - $GNGLL,,,,,173149.960,V,N*62
+
+2021-02-17 23:01:52,125 - test_response_interface.py - DEBUG - $GNGLL,,,,,173150.960,V,N*6A
+
+2021-02-17 23:01:53,149 - test_response_interface.py - DEBUG - $GNGLL,,,,,173151.960,V,N*6B
+
+2021-02-17 23:01:54,169 - test_response_interface.py - DEBUG - $GNGLL,,,,,173152.960,V,N*68
+
+2021-02-17 23:01:55,093 - test_response_interface.py - DEBUG - $GNGLL,,,,,173153.960,V,N*69
+
+2021-02-17 23:01:56,117 - test_response_interface.py - DEBUG - $GNGLL,,,,,173154.960,V,N*6E
+
+2021-02-17 23:01:57,147 - test_response_interface.py - DEBUG - $GNGLL,,,,,173155.960,V,N*6F
+
+2021-02-17 23:01:58,171 - test_response_interface.py - DEBUG - $GNGLL,,,,,173156.960,V,N*6C
+
+2021-02-17 23:01:59,103 - test_response_interface.py - DEBUG - $GNGLL,,,,,173157.960,V,N*6D
+
+2021-02-17 23:02:00,122 - test_response_interface.py - DEBUG - $GNGLL,,,,,173158.960,V,N*62
+
+2021-02-17 23:02:00,232 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#215 [#]GPRS CONFIGURED - OVERRIDING
+
+2021-02-17 23:02:01,153 - test_response_interface.py - DEBUG - $GNGLL,,,,,173159.960,V,N*63
+
+2021-02-17 23:02:02,173 - test_response_interface.py - DEBUG - $GNGLL,,,,,173200.960,V,N*6C
+
+2021-02-17 23:02:03,197 - test_response_interface.py - DEBUG - $GNGLL,,,,,173201.960,V,N*6D
+
+2021-02-17 23:02:04,122 - test_response_interface.py - DEBUG - $GNGLL,,,,,173202.960,V,N*6E
+
+2021-02-17 23:02:04,434 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#226 [#]IP Address: 10.113.152.121
+
+2021-02-17 23:02:05,153 - test_response_interface.py - DEBUG - $GNGLL,,,,,173203.960,V,N*6F
+
+2021-02-17 23:02:06,177 - test_response_interface.py - DEBUG - $GNGLL,,,,,173204.960,V,N*68
+
+2021-02-17 23:02:06,804 - test_response_interface.py - DEBUG - DEBUG:   AWS_ConnectionManage L#193 -> MQTT CONFIGURING!
+DEBUG:   GSMmodule_GsmAppProcess L#390 [#]FETCHING GPRS STATE
+DEBUG:   AWS_ConnectionManage L#135 -> CONNECTING TO MQTT SERVER..
+
+2021-02-17 23:02:09,755 - test_response_interface.py - DEBUG - $GNGLL,,,,,173206.960,V,N*6A
+
+2021-02-17 23:02:09,863 - test_response_interface.py - DEBUG - $GNGLL,,,,,173207.960,V,N*6B
+
+2021-02-17 23:02:16,893 - test_response_interface.py - DEBUG - DEBUG:   AWS_ConnectionManage L#155 -> SEND CLIENT CONN. PACKET
+
+2021-02-17 23:02:17,206 - test_response_interface.py - DEBUG - DEBUG:   AWS_ConnectionManage L#173 -> MQTT SUBSCRIBING TO TOPIC
+
+2021-02-17 23:02:17,523 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#317 [#]ASYNC EVENT: 16
+DEBUG:   GSMmodule_GsmAppProcess L#326 [*]NEW TOKEN: 18717
+DEBUG:   GSMmodule_GsmAppProcess L#347  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"token":18717}}}
+
+2021-02-17 23:02:17,636 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#380 [*]Signal Strength: -43, Good
+DEBUG:   GSMmodule_GsmAppProcess L#383  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"cell_info":"404,11,3ff,e879,663,31,-43,245,245,5,5"}}}
+
+2021-02-17 23:02:22,735 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#380 [*]Signal Strength: -43, Good
+DEBUG:   GSMmodule_GsmAppProcess L#383  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"cell_info":"404,11,3ff,e879,663,31,-43,246,246,5,5"}}}
+
+2021-02-17 23:02:27,733 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#380 [*]Signal Strength: -43, Good
+
+2021-02-17 23:02:27,850 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#383  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"cell_info":"404,11,3ff,e879,663,31,-43,245,245,5,5"}}}
+
+2021-02-17 23:02:28,980 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#120 [#]Starting File Upload
+DEBUG:   FTP_uploadDataToServer L#64 Filesize: 27875
+DEBUG:   FTP_uploadDataToServer L#65 Size to Upload: 27875
+
+2021-02-17 23:02:32,443 - test_response_interface.py - DEBUG - DEBUG:   FTP_uploadDataToServer L#71 FTP Connection Open
+DEBUG:   FTP_uploadDataToServer L#89 Total FTP Requests: 1
+
+2021-02-17 23:02:33,771 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:33,878 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:33,985 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:34,092 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:34,197 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:34,300 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:34,403 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:34,507 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:34,610 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:34,818 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:34,924 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:35,743 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:35,850 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:36,058 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:36,165 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:36,578 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:36,787 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:36,894 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:37,306 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:37,514 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:37,621 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:38,032 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:38,342 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:38,658 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:38,766 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:39,073 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:39,384 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:39,490 - test_response_interface.py - DEBUG - .
+2021-02-17 23:02:47,228 - test_response_interface.py - DEBUG - DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 27875
+
+2021-02-17 23:02:48,561 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#300 File Uploaded Successfully
+DEBUG:   AWS_ConnectionManage L#135 -> CONNECTING TO MQTT SERVER..
+
+2021-02-17 23:02:48,976 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#92 [#]Sync Completed Successfully
+
+2021-02-17 23:02:49,084 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#141 [#]Sync Task Finished!
+
+2021-02-17 23:02:58,652 - test_response_interface.py - DEBUG - DEBUG:   vGsmTaskFunction L#36 [#]Gsm Module Going to Power Saving Mode
+
+2021-02-17 23:02:58,761 - test_response_interface.py - DEBUG - DEBUG:   vGsmTaskFunction L#45 [#]Date: 21/2/17 Time: 23:2:58
+
