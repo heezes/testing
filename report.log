@@ -2,3 +2,9 @@
 2021-02-17 20:17:27,194 - test_cases - DEBUG - Unlock Test Results - Passed: False 
 2021-02-17 20:17:37,704 - test_cases - DEBUG - Lock Failed
 2021-02-17 20:17:37,706 - test_cases - DEBUG - Lock Test Results - Passed: False 
+2021-02-17 20:32:02,385 - test_cases - DEBUG - Unlock Failed
+2021-02-17 20:32:02,388 - test_cases - DEBUG - Unlock Test Results - Passed: False 
+2021-02-17 20:34:14,114 - test_cases - DEBUG - Unlock Failed
+2021-02-17 20:34:14,121 - test_cases - DEBUG - Unlock Test Results - Passed: False 
+2021-02-17 20:51:57,382 - test_cases - DEBUG - Unlock Test Results - Passed: True 
+2021-02-17 20:52:12,525 - test_cases - DEBUG - Lock Test Results - Passed: True 

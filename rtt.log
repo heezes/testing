@@ -23,3 +23,61 @@ flsh: @244 - ECC size 24
 flsh: @292 - UFFS consume spare data size 34
 init: @113 - init page buf
 
+2021-02-17 20:51:57,023 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+
+2021-02-17 20:51:57,127 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+
+2021-02-17 20:51:57,241 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+DEBUG:   vGsmTaskFunction L#55 [#]Waking Up the Gsm Module
+
+2021-02-17 20:51:57,353 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-17 20:51:57,461 - test_response_interface.py - DEBUG - DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-17 20:52:02,653 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-17 20:52:03,678 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404112268776580
+
+
+2021-02-17 20:52:03,789 - test_response_interface.py - DEBUG - OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+89911190185421856080
+
+OK
+
+2021-02-17 20:52:03,895 - test_response_interface.py - DEBUG - 
+
+2021-02-17 20:52:05,634 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-17 20:52:06,558 - test_response_interface.py - DEBUG - $GNGLL,,,,,152204.950,V,N*68
+
+2021-02-17 20:52:07,479 - test_response_interface.py - DEBUG - $GNGLL,,,,,152205.950,V,N*69
+
+2021-02-17 20:52:08,501 - test_response_interface.py - DEBUG - $GNGLL,,,,,152206.950,V,N*6A
+
+2021-02-17 20:52:09,521 - test_response_interface.py - DEBUG - $GNGLL,,,,,152207.950,V,N*6B
+
+2021-02-17 20:52:10,543 - test_response_interface.py - DEBUG - $GNGLL,,,,,152208.950,V,N*64
+
+2021-02-17 20:52:11,463 - test_response_interface.py - DEBUG - $GNGLL,,,,,152209.950,V,N*65
+
+2021-02-17 20:52:12,495 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-17 20:52:12,603 - test_response_interface.py - DEBUG - $GNGLL,,,,,152210.950,V,N*6D
+
+2021-02-17 20:52:12,812 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+
+2021-02-17 20:52:12,930 - test_response_interface.py - DEBUG - DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+DEBUG:   vGsmTaskFunction L#36 [#]Gsm Module Going to Power Saving Mode
+DEBUG:   vGsmTaskFunction L#45 [#]Date: 21/2/17 Time: 20:52:1
+
