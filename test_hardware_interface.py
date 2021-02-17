@@ -7,10 +7,10 @@ except:
 class hardware():
     def __init__(self, pins):
         self.pins = []
-        self.device_reset()
+        # self.device_reset()
         for i in range(0, len(pins)):
             try:
-                self.pins[i] = LED(pins[i])
+                self.pins.append(LED(pins[i]))
             except:
                 print(i)
     def device_reset(self):

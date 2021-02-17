@@ -15,25 +15,6 @@ import sh
 BLE_INTERFACE = 1
 RTT_INTERFACE = 2
 
-# def logRttData(queue):
-#     logger = logging.getLogger('main.py')
-#     logger.setLevel(logging.DEBUG)
-#     # create a file e
-#     handler = RotatingFileHandler('rtt.log', maxBytes=5*1024*1024, backupCount=1)
-#     handler.setLevel(logging.DEBUG)
-
-#     # # create a logging format
-#     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-#     handler.setFormatter(formatter)
-#     # add the file handler to the logger
-#     logger.addHandler(handler)
-#     while True:
-#         time.sleep(0.01)
-#         if(queue.empty() == False):
-#             data = queue.get()
-#             logger.debug(str(data[0]))
-
-
 def main():
     '''
     Create two queue with and append them within an array
@@ -47,12 +28,10 @@ def main():
     data_queue.append(queue.Queue())
     data_queue.append(queue.Queue())
     iot = test_mqtt.Mqtt(data_queue[0])
-    interface = test_response_interface.interface(data_queue, args.device_addr)
+    interface = test_response_interface.interface(data_queue, args.device_addr, ble_interface=False)
     test_case = test_cases.test_cases(data_queue[1], interface)
     x = threading.Thread(target=test_case.processResponse)
-    # y = threading.Thread(target=logRttData, args=(data_queue[0],))
     x.start()
-    # y.start()
     while True:
         time.sleep(0.5)
         if iot.test_request == 6:

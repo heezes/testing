@@ -4,7 +4,7 @@ import parser_util
 import test_hardware_interface
 import time
 
-gpio_pins = [1,2,3,4]
+gpio_pins = [6,13,26] #[key, wheel, access screw]
 
 class test_cases():
     def __init__(self, queue, ble):
@@ -39,7 +39,7 @@ class test_cases():
         results = True
         if(mode):
             global gpio_pins
-            self.hardware.enable_gpio(gpio_pins[0])
+            self.hardware.disable_gpio(gpio_pins[0])
             if(self.parser.getLockResult(wait_time) == False):
                 self.log.debug('Lock Failed') #Lock Failed
                 results =  False
@@ -61,7 +61,7 @@ class test_cases():
         results = True
         if(mode):
             global gpio_pins
-            self.hardware.disable_gpio(gpio_pins[0])
+            self.hardware.enable_gpio(gpio_pins[0])
             if(self.parser.getUnlockResult(wait_time) == False):
                 self.log.debug('Unlock Failed') #Unlock Failed
                 results = False
@@ -102,13 +102,13 @@ class test_cases():
             time.sleep(float(timeout))
             if(mode):
                 global gpio_pins
-                self.hardware.toggle_gpio(gpio_pins[0])
+                self.hardware.enable_gpio(gpio_pins[0])
                 if(self.parser.getUnlockResult(wait_time) == False):
                     self.log.debug('Unlock Failed') #Unlock Failed
                     results.append(False)
                     break
                 time.sleep(timeout)
-                self.hardware.toggle_gpio(gpio_pins[0])
+                self.hardware.disable_gpio(gpio_pins[0])
                 if(self.parser.getLockResult(wait_time) == False):
                     self.log.debug('Lock Failed') #Lock Failed
                     results.append(False)
