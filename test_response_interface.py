@@ -31,10 +31,6 @@ class interface():
         # add the file handler to the logger
         self.logger.addHandler(handler)
         self.connectToInterface(interface)
-        if ble_interface == False:
-            self.connectToRttServer()
-            rttThread = threading.Thread(target=self.retrieveRttData)
-            rttThread.start()
 
 
 
@@ -75,33 +71,39 @@ class interface():
     @param: interface: Response interface(For now only ble is supported. Rtt physical via openocd could be an option)
     """
     def connectToInterface(self, interface):
-        adapter = pygatt.GATTToolBackend(search_window_size=200)
-        adapter.start()
-        device_info = adapter.filtered_scan(self.device_addr, timeout=1)
-        dev_info = device_info[0]
-        print("Connecting to device %s:%s"%(self.device_addr, dev_info['address']))
-        if(device_info):
-            self.device = adapter.connect(dev_info['address'], address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
-            self.device.register_disconnect_callback(self.Disconnected)
-            self.device.exchange_mtu(128)
-            self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75eba",\
-                            callback=self.data_handler_cb,\
-                            indication=False)
-            if self.ble_interface == True:
-                self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75fba",\
-                                callback=self.received_data_cb,\
-                                indication=False)
-            self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x01]), True)
-            print("Auth Command Written")
-            token = b'\x1d\x49\x00\x00'
-            self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75fba", token, True)
-            print("Authenticated")
-            # while self.opcode_response != 0x01:
-            #     pass
-            self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x0C]), True)
-            print("Enabling Debug")
-        # else:
-            #add other interface initialization
+        # adapter = pygatt.GATTToolBackend(search_window_size=200)
+        # adapter.start()
+        # device_info = adapter.filtered_scan(self.device_addr, timeout=1)
+        # dev_info = device_info[0]
+        # print("Connecting to device %s:%s"%(self.device_addr, dev_info['address']))
+        # if(device_info):
+        #     self.device = adapter.connect(dev_info['address'], address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
+        #     self.device.register_disconnect_callback(self.Disconnected)
+        #     self.device.exchange_mtu(128)
+        #     self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75eba",\
+        #                     callback=self.data_handler_cb,\
+        #                     indication=False)
+        #     self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x01]), True)
+        #     print("Auth Command Written")
+        #     token = b'\x1d\x49\x00\x00'
+        #     self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75fba", token, True)
+        #     print("Authenticated")
+        #     # while self.opcode_response != 0x01:
+        #     #     pass
+        #     self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x0C]), True)
+        #     print("Enabling Debug")
+        #     if self.ble_interface == True:
+        #         self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75fba",\
+        #                         callback=self.received_data_cb,\
+        #                         indication=False)
+        #     else:
+        #         self.connectToRttServer()
+        #         rttThread = threading.Thread(target=self.retrieveRttData)
+        #         rttThread.start()
+        self.connectToRttServer()
+        rttThread = threading.Thread(target=self.retrieveRttData)
+        rttThread.start()
+
 
     """
     @brief: This function can request the target to perform an activity depending upon the command
@@ -140,6 +142,7 @@ class interface():
             if(len(data) > 0):
                 try:
                     self.data_queue[1].put((data,))
-                    self.logger.debug(data)
+                    # self.logger.debug(data)
+                    print(data)
                 except Exception as e:
                     print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)

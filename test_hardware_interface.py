@@ -11,6 +11,7 @@ class hardware():
         for i in range(0, len(pins)):
             try:
                 self.pins.append(LED(pins[i]))
+                self.pins[i].off()
             except:
                 print(i)
     def device_reset(self):
