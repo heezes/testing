@@ -82,12 +82,13 @@ class test_cases():
     @param: wait_time: Time to wait for the response (seconds)
     """
     def doSyncTrigger(self, wait_time = 15*60):
-        results = True
+        # results = True
         self.ble.sendCommand(0x08)
-        if(self.parser.getUnlockResult(wait_time) == False):
-            self.log.debug('Sync Failed') #Unlock Failed
-            results = False
-        results_info = "Sync Test Results - Passed: %s "%(str(results))
+        # if(self.parser.getSyncResult(wait_time) == False):
+        #     self.log.debug('Sync Failed') #Unlock Failed
+        #     results = False
+        # results_info = "Sync Test Results - Passed: %s "%(str(results))
+        results_info = "Sync Triggered"
         self.log.debug(results_info)
         return results_info
 
