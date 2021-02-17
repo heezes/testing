@@ -22,17 +22,17 @@ class hardware():
             reset_pin.off()
         except:
             pass
-    def enable_gpio(self, pin):
+    def enable_gpio(self, pin_idx):
         try:
-            self.pins[pin].on()
+            self.pins[pin_idx].on()
         except:
             pass
-    def disable_gpio(self, pin):
+    def disable_gpio(self, pin_idx):
         try:
-            self.pins[pin].off()
+            self.pins[pin_idx].off()
         except:
             pass
 
-    def toggle_gpio(self, pin):
-        self.pins[pin].toggle()
+    def toggle_gpio(self, pin_idx):
+        self.pins[pin_idx].toggle()
 
