@@ -1,9 +1,9 @@
-2021-02-17 20:04:47,393 - test_response_interface.py - DEBUG - DEBUG:   main L#148 [#]♥
+2021-02-17 20:17:14,112 - test_response_interface.py - DEBUG - DEBUG:   main L#148 [#]♥
 ============================
 =   I-VEC (c) Application  =
 =  FW Version: FWv_3_4.bin =
 ============================
-Epoch: 1613592181
+Epoch: 1613592867
 DEBUG:   App_Init L#91 <Device Id: 2818117-893931543-540029520>
 DEBUG:   VEHICLE_Init L#112 Starting!!
 DEBUG:   IMU_Init L#72 [#]IIS2MDC Id: 0x0
