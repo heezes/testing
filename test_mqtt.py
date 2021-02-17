@@ -10,7 +10,7 @@ class Mqtt():
     def __init__(self, queue):
         self.queue = queue
         self.test_request = 0
-        self.test_arg = [1,2,3,4,5]
+        self.test_arg = [1,2,3,4,5] #[mode, wait_time, count, timeout, ...]
         self.mqttc  = mqtt.Client()
         self.mqttc.username_pw_set(username='munnvxsn', password='unegqTSYxMKO')
         self.mqttc.on_connect = self.on_connect

@@ -34,6 +34,7 @@ def main():
     x.start()
     while True:
         time.sleep(0.5)
+        #[mode, wait_time, count, timeout, ...]
         if iot.test_request == 6:
             print("Pushing data to git")
             git = sh.git.bake(_cwd='/home/pi/Desktop/testing')
