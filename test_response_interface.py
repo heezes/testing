@@ -127,8 +127,8 @@ class interface():
     def connectToRttServer(self):
         port = 9090 # socket server port number
         host = "127.0.0.1"
-        client_socket = socket.socket()  # instantiate
-        self.socket = client_socket.connect((host, port))  # connect to the server
+        self.socket = socket.socket()  # instantiate
+        self.socket.connect((host, port))  # connect to the server
 
     """
     @brief: This function retrieves data from the rtt server socket connection
