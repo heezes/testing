@@ -39,7 +39,7 @@ def main():
             print("Pushing data to git")
             git = sh.git.bake(_cwd='/home/pi/Desktop/testing')
             git.add("-A")
-            if len(iot.test_commit_msg > 1):
+            if len(iot.test_commit_msg) > 1:
                 git.commit(m=iot.test_commit_msg)
                 iot.test_commit_msg = ""
             else:
