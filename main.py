@@ -40,7 +40,7 @@ def main():
             commit_msg = input("Provide the commit msg: ")
             git = sh.git.bake(_cwd='/home/pi/Desktop/testing')
             git.add("-A")
-            if text == "":
+            if commit_msg == "":
                 git.commit(m="Log file Syncing(Push made from testing/main.py)")
             else:
                 git.commit(m=commit_msg)
