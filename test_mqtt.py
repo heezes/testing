@@ -85,14 +85,13 @@ class Mqtt():
             if(self.test_request == 0):
                 self.test_arg.clear()
                 request_json = json.loads(msg.payload)
-                self.test_request = request_json['cmd']
+                if 'cmd' in request_json:
+                    self.test_request = request_json['cmd']
                 if 'arg' in request_json:
                     for i in range(len(request_json['arg'])):
                         self.test_arg.append(request_json['arg'][i])
                 if 'msg' in request_json:
                     self.test_commit_msg = str(request_json['msg'])
-                else:
-                    self.test_arg.append(0)
             else:
                 self.test_request("Already Executing Test id: %d"%self.test_request)
         except Exception as e :
