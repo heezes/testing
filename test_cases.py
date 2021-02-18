@@ -103,7 +103,6 @@ class test_cases():
         self.log.debug('Performing Lock/Unlock rest %d times', count)
         results = []
         for i in range(count):
-            time.sleep(float(timeout))
             if(mode):
                 global gpio_pins
                 self.hardware.enable_gpio(KEY_PIN)
@@ -129,6 +128,7 @@ class test_cases():
                     self.log.debug('Lock Failed') #Lock Failed
                     results.append(False)
                     break
+            time.sleep(float(timeout))
             results.append(True)
         passed_test = 0
         print(results)
