@@ -602,3 +602,984 @@ DEBUG:   AWS_ConnectionManage L#135 -> CONNECTING TO MQTT SERVER..
 
 2021-02-17 23:02:58,761 - test_response_interface.py - DEBUG - DEBUG:   vGsmTaskFunction L#45 [#]Date: 21/2/17 Time: 23:2:58
 
+2021-02-18 11:57:02,507 - test_response_interface.py - DEBUG - DEBUG:   main L#148 [#]♥
+============================
+=   I-VEC (c) Application  =
+=  FW Version: FWv_3_4.bin =
+============================
+Epoch: 946684800
+DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x1
+DEBUG:   App_Init L#91 <Device Id: 2621513-893931545-540029520>
+DEBUG:   VEHICLE_Init L#112 Starting!!
+DEBUG:   IMU_Init L#72 [#]IIS2MDC Id: 0x0
+DEBUG:   IMU_Init L#74 [#]IIS2MDC Init Failed
+DEBUG:   IMU_Init L#77 [#]ASM330LHH Id: 0x6B
+DEBUG:   vMiscTaskFunction L#30 [#]MISC TASK Initialized.
+DEBUG:   vAsyncTaskFunction L#22 [#]ASYNC TASK Initialized
+DEBUG:   vDatalogTaskFunction L#20 [#]DATALOG TASK Initialized.
+DEBUG:   vSyncTaskFunction L#29 [#]SYNC TASK Initialized.
+mem : @82 - System static memory: 24384 bytes
+mem : @82 - System static memory: 24384 bytes
+mtb : @174 - init device for mount point /data/ ...
+mtb : @193 - mount partiton: 0,511
+mem : @66 - 0x0x20002e4c: Allocated 192, free 24192
+flsh: @216 - alloc spare buffers 192 bytes.
+flsh: @244 - ECC size 24
+flsh: @292 - UFFS consume spare data size 34
+
+
+2021-02-18 11:57:02,626 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 11:57:03,421 - test_response_interface.py - DEBUG - $GNGLL,,,,,062701.950,V,N*6A
+
+2021-02-18 11:57:04,543 - test_response_interface.py - DEBUG - $GNGLL,,,,,062702.950,V,N*69
+
+2021-02-18 11:57:05,462 - test_response_interface.py - DEBUG - $GNGLL,,,,,062703.950,V,N*68
+
+2021-02-18 11:57:06,482 - test_response_interface.py - DEBUG - $GNGLL,,,,,062704.950,V,N*6F
+
+2021-02-18 11:57:07,505 - test_response_interface.py - DEBUG - $GNGLL,,,,,062705.950,V,N*6E
+
+2021-02-18 11:57:08,428 - test_response_interface.py - DEBUG - $GNGLL,,,,,062706.950,V,N*6D
+
+2021-02-18 11:57:09,458 - test_response_interface.py - DEBUG - $GNGLL,,,,,062707.950,V,N*6C
+
+2021-02-18 11:57:10,289 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 11:57:10,501 - test_response_interface.py - DEBUG - $GNGLL,,,,,062708.950,V,N*63
+DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+
+2021-02-18 11:57:10,627 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 11:57:13,883 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 11:57:22,333 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 11:57:23,356 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+2021-02-18 11:57:23,467 - test_response_interface.py - DEBUG - 
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+
+2021-02-18 11:57:23,581 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 11:57:23,689 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 11:57:25,222 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+
+2021-02-18 11:57:25,338 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+$GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 11:57:26,258 - test_response_interface.py - DEBUG - $GNGLL,,,,,062724.950,V,N*6D
+
+2021-02-18 11:57:27,182 - test_response_interface.py - DEBUG - $GNGLL,,,,,062725.950,V,N*6C
+
+2021-02-18 11:57:28,207 - test_response_interface.py - DEBUG - $GNGLL,,,,,062726.950,V,N*6F
+
+2021-02-18 11:57:29,228 - test_response_interface.py - DEBUG - $GNGLL,,,,,062727.950,V,N*6E
+
+2021-02-18 12:00:31,091 - test_response_interface.py - DEBUG - $GNGLL,,,,,062728.950,V,N*61
+$GNGLL,,,,,062729.950,V,N*60
+DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+$GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:00:32,800 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:00:39,699 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:00:40,719 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+2021-02-18 12:00:40,829 - test_response_interface.py - DEBUG - 
+OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+
+2021-02-18 12:00:40,952 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+
+2021-02-18 12:00:41,060 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:00:42,693 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+
+2021-02-18 12:00:42,801 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:00:43,620 - test_response_interface.py - DEBUG - $GNGLL,,,,,063042.950,V,N*6B
+
+2021-02-18 12:00:44,536 - test_response_interface.py - DEBUG - $GNGLL,,,,,063043.950,V,N*6A
+
+2021-02-18 12:00:45,658 - test_response_interface.py - DEBUG - $GNGLL,,,,,063044.950,V,N*6D
+
+2021-02-18 12:00:46,574 - test_response_interface.py - DEBUG - $GNGLL,,,,,063045.950,V,N*6C
+
+2021-02-18 12:00:47,495 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:00:47,603 - test_response_interface.py - DEBUG - $GNGLL,,,,,063046.950,V,N*6F
+
+2021-02-18 12:00:47,809 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:00:51,172 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:00:58,084 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:00:59,107 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+
+2021-02-18 12:00:59,220 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+
+2021-02-18 12:00:59,332 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:00:59,442 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:01:00,976 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+
+2021-02-18 12:01:01,085 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:01:01,904 - test_response_interface.py - DEBUG - $GNGLL,,,,,063100.960,V,N*6F
+
+2021-02-18 12:01:03,030 - test_response_interface.py - DEBUG - $GNGLL,,,,,063101.960,V,N*6E
+
+2021-02-18 12:01:03,953 - test_response_interface.py - DEBUG - $GNGLL,,,,,063102.960,V,N*6D
+
+2021-02-18 12:01:04,972 - test_response_interface.py - DEBUG - $GNGLL,,,,,063103.960,V,N*6C
+
+2021-02-18 12:01:05,993 - test_response_interface.py - DEBUG - $GNGLL,,,,,063104.960,V,N*6B
+
+2021-02-18 12:01:06,915 - test_response_interface.py - DEBUG - $GNGLL,,,,,063105.960,V,N*6A
+
+2021-02-18 12:01:07,939 - test_response_interface.py - DEBUG - $GNGLL,,,,,063106.960,V,N*69
+
+2021-02-18 12:01:08,659 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:01:08,969 - test_response_interface.py - DEBUG - $GNGLL,,,,,063107.960,V,N*68
+
+2021-02-18 12:01:09,175 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+
+2021-02-18 12:01:09,280 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:01:12,540 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:01:19,459 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:01:20,483 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+2021-02-18 12:01:20,594 - test_response_interface.py - DEBUG - 
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+
+2021-02-18 12:01:20,707 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:01:20,815 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:01:22,449 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+$GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:01:23,270 - test_response_interface.py - DEBUG - $GNGLL,,,,,063121.960,V,N*6C
+
+2021-02-18 12:01:24,393 - test_response_interface.py - DEBUG - $GNGLL,,,,,063122.960,V,N*6F
+
+2021-02-18 12:01:25,313 - test_response_interface.py - DEBUG - $GNGLL,,,,,063123.960,V,N*6E
+
+2021-02-18 12:01:26,338 - test_response_interface.py - DEBUG - $GNGLL,,,,,063124.960,V,N*69
+
+2021-02-18 12:01:26,956 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:01:27,271 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:01:30,640 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:01:37,557 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:01:38,578 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+2021-02-18 12:01:38,695 - test_response_interface.py - DEBUG - 
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+
+2021-02-18 12:01:38,802 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:01:38,907 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:01:40,442 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+
+2021-02-18 12:01:40,549 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:01:41,466 - test_response_interface.py - DEBUG - $GNGLL,,,,,063140.950,V,N*68
+
+2021-02-18 12:01:42,392 - test_response_interface.py - DEBUG - $GNGLL,,,,,063141.950,V,N*69
+
+2021-02-18 12:01:43,417 - test_response_interface.py - DEBUG - $GNGLL,,,,,063142.950,V,N*6A
+
+2021-02-18 12:01:44,437 - test_response_interface.py - DEBUG - $GNGLL,,,,,063143.950,V,N*6B
+
+2021-02-18 12:01:45,457 - test_response_interface.py - DEBUG - $GNGLL,,,,,063144.950,V,N*6C
+
+2021-02-18 12:01:45,968 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:01:46,381 - test_response_interface.py - DEBUG - $GNGLL,,,,,063145.950,V,N*6D
+
+2021-02-18 12:01:46,492 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:01:49,855 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:01:56,674 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:01:57,700 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+
+2021-02-18 12:01:57,809 - test_response_interface.py - DEBUG - 404100531844034
+
+OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+
+2021-02-18 12:01:57,923 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+
+2021-02-18 12:01:58,032 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+
+2021-02-18 12:01:58,139 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:01:59,671 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+
+2021-02-18 12:01:59,779 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:02:00,600 - test_response_interface.py - DEBUG - $GNGLL,,,,,063159.950,V,N*60
+
+2021-02-18 12:02:01,518 - test_response_interface.py - DEBUG - $GNGLL,,,,,063200.950,V,N*6F
+
+2021-02-18 12:02:02,614 - test_response_interface.py - DEBUG - $GNGLL,,,,,063201.950,V,N*6E
+
+2021-02-18 12:02:03,634 - test_response_interface.py - DEBUG - $GNGLL,,,,,063202.950,V,N*6D
+
+2021-02-18 12:02:04,558 - test_response_interface.py - DEBUG - $GNGLL,,,,,063203.950,V,N*6C
+
+2021-02-18 12:02:05,582 - test_response_interface.py - DEBUG - $GNGLL,,,,,063204.950,V,N*6B
+
+2021-02-18 12:02:05,996 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:02:06,307 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:02:09,658 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:02:16,579 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:02:17,604 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+2021-02-18 12:02:17,722 - test_response_interface.py - DEBUG - 
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+
+2021-02-18 12:02:17,832 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:02:17,942 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:02:19,476 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+
+2021-02-18 12:02:19,587 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+$GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:02:20,510 - test_response_interface.py - DEBUG - $GNGLL,,,,,063219.960,V,N*64
+
+2021-02-18 12:02:21,433 - test_response_interface.py - DEBUG - $GNGLL,,,,,063220.960,V,N*6E
+
+2021-02-18 12:02:22,460 - test_response_interface.py - DEBUG - $GNGLL,,,,,063221.960,V,N*6F
+
+2021-02-18 12:02:23,485 - test_response_interface.py - DEBUG - $GNGLL,,,,,063222.960,V,N*6C
+
+2021-02-18 12:02:24,503 - test_response_interface.py - DEBUG - $GNGLL,,,,,063223.960,V,N*6D
+
+2021-02-18 12:02:25,018 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:02:25,435 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+$GNGLL,,,,,063224.960,V,N*6A
+
+2021-02-18 12:02:28,800 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:02:35,619 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:02:36,643 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+
+2021-02-18 12:02:36,753 - test_response_interface.py - DEBUG - 404100531844034
+
+OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+
+2021-02-18 12:02:36,870 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+
+2021-02-18 12:02:36,980 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+
+2021-02-18 12:02:37,089 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:02:38,622 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+$GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:02:39,538 - test_response_interface.py - DEBUG - $GNGLL,,,,,063238.950,V,N*64
+
+2021-02-18 12:02:40,561 - test_response_interface.py - DEBUG - $GNGLL,,,,,063239.950,V,N*65
+
+2021-02-18 12:02:41,582 - test_response_interface.py - DEBUG - $GNGLL,,,,,063240.950,V,N*6B
+
+2021-02-18 12:02:42,504 - test_response_interface.py - DEBUG - $GNGLL,,,,,063241.950,V,N*6A
+
+2021-02-18 12:02:43,531 - test_response_interface.py - DEBUG - $GNGLL,,,,,063242.950,V,N*69
+
+2021-02-18 12:02:44,555 - test_response_interface.py - DEBUG - $GNGLL,,,,,063243.950,V,N*68
+
+2021-02-18 12:02:45,580 - test_response_interface.py - DEBUG - $GNGLL,,,,,063244.950,V,N*6F
+DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:02:45,895 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+
+2021-02-18 12:02:46,001 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:02:49,258 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:02:56,179 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:02:57,206 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+2021-02-18 12:02:57,316 - test_response_interface.py - DEBUG - 
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+
+2021-02-18 12:02:57,430 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:02:57,540 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:02:59,068 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+
+2021-02-18 12:02:59,175 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+$GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:02:59,994 - test_response_interface.py - DEBUG - $GNGLL,,,,,063258.960,V,N*61
+
+2021-02-18 12:03:01,120 - test_response_interface.py - DEBUG - $GNGLL,,,,,063259.960,V,N*60
+
+2021-02-18 12:03:02,041 - test_response_interface.py - DEBUG - $GNGLL,,,,,063300.960,V,N*6D
+
+2021-02-18 12:03:03,065 - test_response_interface.py - DEBUG - $GNGLL,,,,,063301.960,V,N*6C
+
+2021-02-18 12:03:04,087 - test_response_interface.py - DEBUG - $GNGLL,,,,,063302.960,V,N*6F
+
+2021-02-18 12:03:04,805 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:03:05,117 - test_response_interface.py - DEBUG - $GNGLL,,,,,063303.960,V,N*6E
+
+2021-02-18 12:03:05,229 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:03:08,594 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:03:15,516 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:03:15,728 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x1
+
+2021-02-18 12:03:16,543 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+
+2021-02-18 12:03:16,652 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+
+2021-02-18 12:03:16,762 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:03:16,869 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:03:18,403 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+
+2021-02-18 12:03:18,512 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+
+2021-02-18 12:03:18,620 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:03:19,443 - test_response_interface.py - DEBUG - $GNGLL,,,,,063317.950,V,N*68
+
+2021-02-18 12:03:20,365 - test_response_interface.py - DEBUG - $GNGLL,,,,,063318.950,V,N*67
+
+2021-02-18 12:03:21,389 - test_response_interface.py - DEBUG - $GNGLL,,,,,063319.950,V,N*66
+
+2021-02-18 12:03:22,412 - test_response_interface.py - DEBUG - $GNGLL,,,,,063320.950,V,N*6C
+
+2021-02-18 12:03:23,432 - test_response_interface.py - DEBUG - $GNGLL,,,,,063321.950,V,N*6D
+
+2021-02-18 12:03:24,449 - test_response_interface.py - DEBUG - $GNGLL,,,,,063322.950,V,N*6E
+
+2021-02-18 12:03:25,269 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:03:25,375 - test_response_interface.py - DEBUG - $GNGLL,,,,,063323.950,V,N*6F
+
+2021-02-18 12:03:25,797 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:03:29,161 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:03:36,079 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:03:37,104 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+
+2021-02-18 12:03:37,216 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+
+2021-02-18 12:03:37,329 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:03:37,438 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:03:38,968 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+
+2021-02-18 12:03:39,074 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:03:39,893 - test_response_interface.py - DEBUG - $GNGLL,,,,,063338.960,V,N*66
+
+2021-02-18 12:03:40,916 - test_response_interface.py - DEBUG - $GNGLL,,,,,063339.960,V,N*67
+
+2021-02-18 12:03:41,940 - test_response_interface.py - DEBUG - $GNGLL,,,,,063340.960,V,N*69
+
+2021-02-18 12:03:42,965 - test_response_interface.py - DEBUG - $GNGLL,,,,,063341.960,V,N*68
+
+2021-02-18 12:03:43,986 - test_response_interface.py - DEBUG - $GNGLL,,,,,063342.960,V,N*6B
+
+2021-02-18 12:03:45,006 - test_response_interface.py - DEBUG - $GNGLL,,,,,063343.960,V,N*6A
+
+2021-02-18 12:03:45,421 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:03:45,836 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+
+2021-02-18 12:03:45,947 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+$GNGLL,,,,,063344.960,V,N*6D
+
+2021-02-18 12:03:49,213 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:03:56,128 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:03:57,151 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+
+2021-02-18 12:03:57,264 - test_response_interface.py - DEBUG - OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+
+2021-02-18 12:03:57,376 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:03:57,488 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:03:59,122 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+$GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:03:59,939 - test_response_interface.py - DEBUG - $GNGLL,,,,,063358.960,V,N*60
+
+2021-02-18 12:04:01,068 - test_response_interface.py - DEBUG - $GNGLL,,,,,063359.960,V,N*61
+
+2021-02-18 12:04:01,986 - test_response_interface.py - DEBUG - $GNGLL,,,,,063400.960,V,N*6A
+
+2021-02-18 12:04:03,010 - test_response_interface.py - DEBUG - $GNGLL,,,,,063401.960,V,N*6B
+
+2021-02-18 12:04:04,032 - test_response_interface.py - DEBUG - $GNGLL,,,,,063402.960,V,N*68
+
+2021-02-18 12:04:04,447 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:04:04,761 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:04:08,121 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:04:15,340 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:04:16,361 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+2021-02-18 12:04:16,474 - test_response_interface.py - DEBUG - 
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+
+2021-02-18 12:04:16,590 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:04:16,707 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:04:18,241 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+
+2021-02-18 12:04:18,346 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+$GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:04:19,166 - test_response_interface.py - DEBUG - $GNGLL,,,,,063417.950,V,N*6F
+
+2021-02-18 12:04:20,295 - test_response_interface.py - DEBUG - $GNGLL,,,,,063418.950,V,N*60
+
+2021-02-18 12:04:21,214 - test_response_interface.py - DEBUG - $GNGLL,,,,,063419.950,V,N*61
+
+2021-02-18 12:04:22,144 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+
+2021-02-18 12:04:22,248 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+$GNGLL,,,,,063420.950,V,N*6B
+
+2021-02-18 12:04:22,374 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#99 [*]Sending Unlock Signal to Gsm Module Task
+
+2021-02-18 12:04:22,483 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 169705 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+DEBUG:   vGsmTaskFunction L#55 [#]Waking Up the Gsm Module
+DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:04:24,211 - test_response_interface.py - DEBUG - $GNGLL,,,,,063422.950,V,N*69
+
+2021-02-18 12:04:25,234 - test_response_interface.py - DEBUG - $GNGLL,,,,,063423.950,V,N*68
+
+2021-02-18 12:04:26,260 - test_response_interface.py - DEBUG - $GNGLL,,,,,063424.950,V,N*6F
+
+2021-02-18 12:04:27,182 - test_response_interface.py - DEBUG - $GNGLL,,,,,063425.950,V,N*6E
+
+2021-02-18 12:04:30,543 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:04:31,567 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: AT+CIMI
+404100531844034
+
+OK
+
+
+2021-02-18 12:04:31,678 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: AT+QCCID
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+
+2021-02-18 12:04:31,794 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+
+2021-02-18 12:04:31,905 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:04:32,013 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+
+2021-02-18 12:04:32,121 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:04:33,650 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+
+2021-02-18 12:04:33,760 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+$GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:04:34,682 - test_response_interface.py - DEBUG - $GNGLL,,,,,063432.960,V,N*6B
+
+2021-02-18 12:04:35,603 - test_response_interface.py - DEBUG - $GNGLL,,,,,063433.960,V,N*6A
+
+2021-02-18 12:04:36,622 - test_response_interface.py - DEBUG - $GNGLL,,,,,063434.960,V,N*6D
+
+2021-02-18 12:04:37,241 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-18 12:04:37,660 - test_response_interface.py - DEBUG - $GNGLL,,,,,063435.960,V,N*6C
+DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+DEBUG:   vMiscTaskFunction L#64 [*]Sending Sleep Signal to GSM Module Task
+DEBUG:   vGsmTaskFunction L#36 [#]Gsm Module Going to Power Saving Mode
+
+2021-02-18 12:04:37,771 - test_response_interface.py - DEBUG - DEBUG:   vGsmTaskFunction L#45 [#]Date: 21/2/18 Time: 12:4:37
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:04:38,186 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-18 12:04:41,037 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+
+2021-02-18 12:04:49,783 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+
+2021-02-18 12:04:49,894 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+
+2021-02-18 12:04:50,005 - test_response_interface.py - DEBUG - TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#99 [*]Sending Unlock Signal to Gsm Module Task
+DEBUG:   vGsmTaskFunction L#55 [#]Waking Up the Gsm Module
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:04:50,116 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-18 12:04:50,230 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 171325 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-18 12:04:57,250 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:04:59,290 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: AT+CIMI
+404100531844034
+
+OK
+
+
+2021-02-18 12:04:59,398 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: AT+QCCID
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+
+2021-02-18 12:04:59,508 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+
+2021-02-18 12:04:59,615 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:04:59,723 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+
+2021-02-18 12:04:59,832 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:05:01,362 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+
+2021-02-18 12:05:01,470 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:05:02,289 - test_response_interface.py - DEBUG - $GNGLL,,,,,063500.960,V,N*6B
+
+2021-02-18 12:05:03,309 - test_response_interface.py - DEBUG - $GNGLL,,,,,063501.960,V,N*6A
+
+2021-02-18 12:05:04,332 - test_response_interface.py - DEBUG - $GNGLL,,,,,063502.960,V,N*69
+
+2021-02-18 12:05:05,253 - test_response_interface.py - DEBUG - $GNGLL,,,,,063503.960,V,N*68
+
+2021-02-18 12:05:06,377 - test_response_interface.py - DEBUG - $GNGLL,,,,,063504.960,V,N*6F
+
+2021-02-18 12:05:06,691 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:05:07,107 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:05:10,468 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:05:17,594 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:05:18,619 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+
+2021-02-18 12:05:18,729 - test_response_interface.py - DEBUG - OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+OK
+
+
+2021-02-18 12:05:18,843 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+
+2021-02-18 12:05:18,953 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-18 12:05:19,062 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:05:20,700 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+
+2021-02-18 12:05:20,808 - test_response_interface.py - DEBUG - $GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:05:21,627 - test_response_interface.py - DEBUG - $GNGLL,,,,,063519.960,V,N*63
+
+2021-02-18 12:05:22,552 - test_response_interface.py - DEBUG - $GNGLL,,,,,063520.960,V,N*69
+
+2021-02-18 12:05:23,574 - test_response_interface.py - DEBUG - $GNGLL,,,,,063521.960,V,N*68
+
+2021-02-18 12:05:24,592 - test_response_interface.py - DEBUG - $GNGLL,,,,,063522.960,V,N*6B
+
+2021-02-18 12:05:25,611 - test_response_interface.py - DEBUG - $GNGLL,,,,,063523.960,V,N*6A
+
+2021-02-18 12:05:26,232 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#208 [#]GPRS CONFIGURED
+
+2021-02-18 12:05:26,442 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#231 [#]GPRS ERROR
+
+2021-02-18 12:05:26,552 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#236 [#]GPRS DEACTIVATING
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+
+2021-02-18 12:05:29,813 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+
+2021-02-18 12:05:29,924 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-18 12:05:30,239 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+DEBUG:   vMiscTaskFunction L#64 [*]Sending Sleep Signal to GSM Module Task
+
+2021-02-18 12:05:30,655 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-18 12:05:36,866 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-18 12:05:37,892 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: 
+404100531844034
+
+OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: 
+8991102005318440342F
+
+2021-02-18 12:05:38,007 - test_response_interface.py - DEBUG - 
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+
+2021-02-18 12:05:38,119 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+
+2021-02-18 12:05:38,228 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#101 
+
+2021-02-18 12:05:39,762 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#127 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#122 Return Code : 0 
+DEBUG:   vGsmTaskFunction L#36 [#]Gsm Module Going to Power Saving Mode
+
+2021-02-18 12:05:39,874 - test_response_interface.py - DEBUG - DEBUG:   vGsmTaskFunction L#45 [#]Date: 21/2/18 Time: 12:5:39
+FUNC_ENTRY:   GSMmodule_DeInit L#133 
+$GNGLL,,,,,235942.869,V,N*68
+
+2021-02-18 12:05:40,694 - test_response_interface.py - DEBUG - $GNGLL,,,,,063539.960,V,N*61
+
+2021-02-18 12:05:41,714 - test_response_interface.py - DEBUG - $GNGLL,,,,,063540.960,V,N*6F
+
+2021-02-18 12:05:42,739 - test_response_interface.py - DEBUG - $GNGLL,,,,,063541.960,V,N*6E
+
+2021-02-18 12:05:43,458 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#148 Return Code : 0 
+
