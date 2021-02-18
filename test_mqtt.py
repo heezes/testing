@@ -11,6 +11,7 @@ class Mqtt():
         self.queue = queue
         self.test_request = 0
         self.test_arg = [1,2,3,4,5] #[mode, wait_time, count, timeout, ...]
+        self.test_commit_msg = ""
         self.mqttc  = mqtt.Client()
         self.mqttc.username_pw_set(username='munnvxsn', password='unegqTSYxMKO')
         self.mqttc.on_connect = self.on_connect
@@ -88,6 +89,8 @@ class Mqtt():
                 if 'arg' in request_json:
                     for i in range(len(request_json['arg'])):
                         self.test_arg.append(request_json['arg'][i])
+                if 'msg' in request_json:
+                    self.test_commit_msg = str(request_json['msg'])
                 else:
                     self.test_arg.append(0)
             else:
