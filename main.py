@@ -37,9 +37,13 @@ def main():
         #[mode, wait_time, count, timeout, ...]
         if iot.test_request == 6:
             print("Pushing data to git")
+            commit_msg = input("Provide the commit msg: ")
             git = sh.git.bake(_cwd='/home/pi/Desktop/testing')
             git.add("-A")
-            git.commit(m="Log file Syncing(Push made from testing/main.py)")
+            if text == "":
+                git.commit(m="Log file Syncing(Push made from testing/main.py)")
+            else:
+                git.commit(m=commit_msg)
             git.push()
             os._exit(os.EX_OK)
         elif(iot.test_request == 1):
