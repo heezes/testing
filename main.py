@@ -82,10 +82,10 @@ def main():
             print(info)
             iot.sendInfo(info)
             iot.test_request = 0
-            if(iot.test_arg[0]>1):
-                ret_info = test_case.doSyncTrigger()
-            else:
-                ret_info = test_case.doSyncTrigger(wait_time = 15*60)
+ #           if(iot.test_arg[0]>1):
+            ret_info = test_case.doSyncTrigger()
+  #          else:
+   #             ret_info = test_case.doSyncTrigger(wait_time = 15*60)
             iot.sendInfo(ret_info)
 
 if __name__ == "__main__":
