@@ -5903,3 +5903,1887 @@ FUNC_ENTRY:   GSMmodule_DeInit L#134
 
 2021-02-19 18:32:03,198 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#149 Return Code : 0 
 
+2021-02-19 18:46:32,251 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+
+2021-02-19 18:46:32,358 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+TEMPLATE - initialization
+
+2021-02-19 18:46:32,455 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+DEBUG:   vGsmTaskFunction L#57 [#]Waking Up the Gsm Module
+FUNC_ENTRY:   GSMmodule_Init L#57 
+DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-19 18:46:32,557 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#561 Return Code : -1 
+
+2021-02-19 18:46:32,658 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-19 18:46:33,062 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-19 18:46:40,097 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-19 18:46:42,110 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: AT+CIMI
+404100531844034
+
+
+2021-02-19 18:46:42,212 - test_response_interface.py - DEBUG - OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: AT+QCCID
+8991102005318440342F
+
+OK
+
+2021-02-19 18:46:42,314 - test_response_interface.py - DEBUG - 
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+
+2021-02-19 18:46:42,416 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+
+2021-02-19 18:46:42,517 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-19 18:46:42,720 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+DEBUG:   GSMmodule_Init L#117 AIRTELIOT.COM
+
+2021-02-19 18:46:42,821 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#104 
+
+2021-02-19 18:46:44,430 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#130 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#123 Return Code : 0 
+
+2021-02-19 18:46:44,536 - test_response_interface.py - DEBUG - $GNGLL,,,,,131644.191,V,N*68
+
+2021-02-19 18:46:45,442 - test_response_interface.py - DEBUG - $GNGLL,2831.2988,N,07716.7163,E,131645.188,A,A*45
+
+2021-02-19 18:46:46,448 - test_response_interface.py - DEBUG - $GNGLL,2831.3078,N,07716.7235,E,131646.215,A,A*46
+
+2021-02-19 18:46:47,354 - test_response_interface.py - DEBUG - $GNGLL,2831.3070,N,07716.7233,E,131647.213,A,A*4F
+
+2021-02-19 18:46:48,361 - test_response_interface.py - DEBUG - $GNGLL,2831.3091,N,07716.7235,E,131648.214,A,A*4E
+
+2021-02-19 18:46:48,765 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#209 [#]GPRS CONFIGURED
+
+2021-02-19 18:46:49,373 - test_response_interface.py - DEBUG - $GNGLL,2831.3097,N,07716.7231,E,131649.214,A,A*4D
+
+2021-02-19 18:46:50,378 - test_response_interface.py - DEBUG - $GNGLL,2831.3095,N,07716.7221,E,131650.212,A,A*40
+
+2021-02-19 18:46:51,384 - test_response_interface.py - DEBUG - $GNGLL,2831.3090,N,07716.7217,E,131651.211,A,A*42
+
+2021-02-19 18:46:52,396 - test_response_interface.py - DEBUG - $GNGLL,2831.3089,N,07716.7218,E,131652.211,A,A*46
+
+2021-02-19 18:46:53,306 - test_response_interface.py - DEBUG - $GNGLL,2831.3088,N,07716.7218,E,131653.212,A,A*45
+
+2021-02-19 18:46:54,416 - test_response_interface.py - DEBUG - $GNGLL,2831.3087,N,07716.7222,E,131654.213,A,A*45
+
+2021-02-19 18:46:54,622 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#227 [#]IP Address: 10.117.156.8
+FUNC_ENTRY:   GSMmodule_ConfigureGPSFastfix L#141 
+FUNC_ENTRY:   GSMmodule_GetTimeSyncStatus L#29 
+
+2021-02-19 18:46:54,730 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_GetTimeSyncStatus L#34 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SetRefLocFromGSMCoords L#40 
+FUNC_ENTRY:   GSMmodule_SetHttpUrl L#23 
+FUNC_EXIT:   GSMmodule_SetHttpUrl L#32 Return Code : 0 
+
+2021-02-19 18:46:54,834 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_PostHttpData L#44 
+
+2021-02-19 18:46:55,438 - test_response_interface.py - DEBUG - $GNGLL,2831.3084,N,07716.7219,E,131655.212,A,A*4E
+
+2021-02-19 18:46:56,445 - test_response_interface.py - DEBUG - $GNGLL,2831.3047,N,07716.7170,E,131656.190,A,A*47
+
+2021-02-19 18:46:58,255 - test_response_interface.py - DEBUG - $GNGLL,2831.3032,N,07716.7146,E,131658.000,A,A*46
+
+2021-02-19 18:46:58,357 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_PostHttpData L#53 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ReadHttpResponse L#65 
+
+2021-02-19 18:46:58,761 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ReadHttpResponse L#73 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SetRefLocFromGSMCoords L#83 Return Code : 0 
+
+2021-02-19 18:46:58,864 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGPSFastfix L#148 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#198 -> MQTT CONFIGURING!
+FUNC_ENTRY:   GSMmodule_ConfigMqttConnection L#25 
+
+2021-02-19 18:46:58,966 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigMqttConnection L#92 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#391 [#]FETCHING GPRS STATE
+
+2021-02-19 18:46:59,067 - test_response_interface.py - DEBUG - DEBUG:   AWS_ConnectionManage L#136 -> CONNECTING TO MQTT SERVER..
+FUNC_ENTRY:   GSMmodule_MqttServerConnect L#105 
+
+2021-02-19 18:47:00,278 - test_response_interface.py - DEBUG - $GNGLL,2831.3021,N,07716.7142,E,131700.000,A,A*4C
+
+2021-02-19 18:47:03,094 - test_response_interface.py - DEBUG - $GNGLL,2831.3021,N,07716.7142,E,131700.000,A,A*4C
+
+2021-02-19 18:47:03,296 - test_response_interface.py - DEBUG - $GNGLL,2831.3017,N,07716.7141,E,131701.000,A,A*4B
+
+2021-02-19 18:47:09,427 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttServerConnect L#119 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#160 -> SEND CLIENT CONN. PACKET
+FUNC_ENTRY:   GSMmodule_MqttConnect L#180 
+
+2021-02-19 18:47:10,336 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttConnect L#201 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#178 -> MQTT SUBSCRIBING TO TOPIC
+FUNC_ENTRY:   GSMmodule_MqttSubscribe L#244 
+
+2021-02-19 18:47:12,146 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttSubscribe L#260 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#318 [#]ASYNC EVENT: 16
+DEBUG:   GSMmodule_GsmAppProcess L#327 [*]NEW TOKEN: 18717
+
+2021-02-19 18:47:12,250 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#348  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"token":18717}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:47:12,359 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:47:12,455 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:47:17,481 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:47:17,583 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:47:22,612 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+
+2021-02-19 18:47:22,714 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:47:22,816 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:47:27,844 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:47:32,972 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:47:33,074 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:47:38,100 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:47:38,204 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:47:43,233 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+
+2021-02-19 18:47:43,337 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:47:48,365 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:47:48,467 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:47:53,493 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:47:53,595 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:47:58,724 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:03,851 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:48:03,955 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:08,982 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:14,114 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:48:14,216 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:19,243 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:48:19,344 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:24,371 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:48:24,476 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:29,505 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+
+2021-02-19 18:48:29,611 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:34,638 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+
+2021-02-19 18:48:34,740 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:48:34,842 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:39,869 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:45,003 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:48:45,104 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:50,130 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:48:50,232 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:55,258 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5216999,77.2785721]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:48:55,362 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:48:58,784 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+
+2021-02-19 18:48:58,889 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-19 18:48:59,291 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+DEBUG:   vGsmTaskFunction L#38 [#]Gsm Module Going to Power Saving Mode
+
+2021-02-19 18:48:59,392 - test_response_interface.py - DEBUG - DEBUG:   vGsmTaskFunction L#47 [#]Date: 21/2/19 Time: 18:48:58
+FUNC_ENTRY:   GSMmodule_DeInit L#134 
+
+2021-02-19 18:48:59,699 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fclose L#416 
+
+2021-02-19 18:48:59,803 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-19 18:49:02,716 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#149 Return Code : 0 
+
+2021-02-19 18:49:15,989 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#40 [#]Sync Task Triggered: 18:49:14
+DEBUG:   vSyncTaskFunction L#43 [#]Next Alarm Time: 2:0:0
+DEBUG:   vSyncTaskFunction L#46 [#]Free:66977792 Used:131072
+
+2021-02-19 18:49:16,094 - test_response_interface.py - DEBUG - DEBUG:   CAN_AppInit L#229 [#]Can Stack Initialized: 198536
+DEBUG:   vGsmTaskFunction L#57 [#]Waking Up the Gsm Module
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-19 18:49:23,331 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-19 18:49:25,345 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: AT+CIMI
+404100531844034
+
+OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: AT+QCCID
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-19 18:49:25,449 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+DEBUG:   GSMmodule_Init L#117 AIRTELIOT.COM
+
+2021-02-19 18:49:25,553 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#104 
+
+2021-02-19 18:49:27,063 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#130 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#123 Return Code : 0 
+
+2021-02-19 18:49:27,168 - test_response_interface.py - DEBUG - $GNGLL,,,,,131926.880,V,N*6A
+
+2021-02-19 18:49:28,074 - test_response_interface.py - DEBUG - $GNGLL,2831.2956,N,07716.7186,E,131927.898,A,A*4E
+
+2021-02-19 18:49:29,080 - test_response_interface.py - DEBUG - $GNGLL,2831.2913,N,07716.7175,E,131928.903,A,A*4F
+
+2021-02-19 18:49:30,087 - test_response_interface.py - DEBUG - $GNGLL,2831.2916,N,07716.7170,E,131929.901,A,A*4C
+
+2021-02-19 18:49:31,093 - test_response_interface.py - DEBUG - $GNGLL,2831.2931,N,07716.7170,E,131930.900,A,A*40
+
+2021-02-19 18:49:31,898 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#209 [#]GPRS CONFIGURED
+
+2021-02-19 18:49:32,101 - test_response_interface.py - DEBUG - $GNGLL,2831.2914,N,07716.7142,E,131931.893,A,A*4C
+
+2021-02-19 18:49:33,107 - test_response_interface.py - DEBUG - $GNGLL,2831.2958,N,07716.7160,E,131932.894,A,A*40
+
+2021-02-19 18:49:34,113 - test_response_interface.py - DEBUG - $GNGLL,2831.2952,N,07716.7085,E,131933.880,A,A*44
+
+2021-02-19 18:49:35,120 - test_response_interface.py - DEBUG - $GNGLL,2831.2932,N,07716.7085,E,131935.000,A,A*44
+
+2021-02-19 18:49:35,226 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#227 [#]IP Address: 10.126.34.250
+FUNC_ENTRY:   GSMmodule_ConfigureGPSFastfix L#141 
+FUNC_ENTRY:   GSMmodule_GetTimeSyncStatus L#29 
+FUNC_EXIT:   GSMmodule_GetTimeSyncStatus L#34 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SetRefLocFromGSMCoords L#40 
+FUNC_ENTRY:   GSMmodule_SetHttpUrl L#23 
+FUNC_EXIT:   GSMmodule_SetHttpUrl L#32 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_PostHttpData L#44 
+
+2021-02-19 18:49:36,136 - test_response_interface.py - DEBUG - $GNGLL,2831.2910,N,07716.7088,E,131936.000,A,A*4A
+
+2021-02-19 18:49:37,246 - test_response_interface.py - DEBUG - $GNGLL,2831.2910,N,07716.7089,E,131937.000,A,A*4A
+
+2021-02-19 18:49:38,055 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_PostHttpData L#53 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ReadHttpResponse L#65 
+
+2021-02-19 18:49:38,260 - test_response_interface.py - DEBUG - $GNGLL,2831.2911,N,07716.7089,E,131938.000,A,A*44
+
+2021-02-19 18:49:38,364 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ReadHttpResponse L#73 Return Code : 0 
+
+2021-02-19 18:49:38,471 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SetRefLocFromGSMCoords L#83 Return Code : 0 
+FUNC_EXIT:   GSMmodule_ConfigureGPSFastfix L#148 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#198 -> MQTT CONFIGURING!
+FUNC_ENTRY:   GSMmodule_ConfigMqttConnection L#25 
+FUNC_EXIT:   GSMmodule_ConfigMqttConnection L#92 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#391 [#]FETCHING GPRS STATE
+DEBUG:   AWS_ConnectionManage L#136 -> CONNECTING TO MQTT SERVER..
+FUNC_ENTRY:   GSMmodule_MqttServerConnect L#105 
+
+2021-02-19 18:49:39,882 - test_response_interface.py - DEBUG - $GNGLL,2831.2911,N,07716.7088,E,131939.000,A,A*44
+
+2021-02-19 18:49:49,633 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttServerConnect L#119 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#160 -> SEND CLIENT CONN. PACKET
+FUNC_ENTRY:   GSMmodule_MqttConnect L#180 
+
+2021-02-19 18:49:50,440 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttConnect L#201 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#178 -> MQTT SUBSCRIBING TO TOPIC
+FUNC_ENTRY:   GSMmodule_MqttSubscribe L#244 
+
+2021-02-19 18:49:51,450 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttSubscribe L#260 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#318 [#]ASYNC EVENT: 16
+DEBUG:   GSMmodule_GsmAppProcess L#327 [*]NEW TOKEN: 18717
+DEBUG:   GSMmodule_GsmAppProcess L#348  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"token":18717}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:49:51,557 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"gps":[28.5215168,77.2784805]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:49:56,588 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"gps":[28.5215168,77.2784805]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:50:01,619 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"gps":[28.5215168,77.2784805]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 18:50:01,725 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 18:50:03,033 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#119 [#]Starting File Upload
+FUNC_ENTRY:   GSMmodule_MqttServerDisconnect L#130 
+
+2021-02-19 18:50:03,141 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttServerDisconnect L#144 Return Code : 0 
+FUNC_ENTRY:   FTP_uploadDataToServer L#55 
+FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 16958 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#405 Return Code : -1 
+DEBUG:   FTP_uploadDataToServer L#64 Filesize: 16958
+DEBUG:   FTP_uploadDataToServer L#65 Size to Upload: 16958
+FUNC_ENTRY:   GSMmodule_FtpOpenConnection L#64 
+
+2021-02-19 18:50:06,463 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpOpenConnection L#99 Return Code : 0 
+DEBUG:   FTP_uploadDataToServer L#71 FTP Connection Open
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   FTP_uploadDataToServer L#89 Total FTP Requests: 4
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 18:50:07,775 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 18:50:07,879 - test_response_interface.py - DEBUG - .
+2021-02-19 18:50:07,980 - test_response_interface.py - DEBUG - .
+2021-02-19 18:50:08,082 - test_response_interface.py - DEBUG - .
+2021-02-19 18:50:08,183 - test_response_interface.py - DEBUG - .FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 18:50:14,314 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 5120
+FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-19 18:50:14,620 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 18:50:14,826 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 18:50:16,737 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 18:50:16,839 - test_response_interface.py - DEBUG - ..
+2021-02-19 18:50:16,940 - test_response_interface.py - DEBUG - .
+2021-02-19 18:50:17,041 - test_response_interface.py - DEBUG - .
+2021-02-19 18:50:17,143 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 18:50:35,137 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 10240
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+
+2021-02-19 18:50:35,243 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 18:50:35,746 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 18:50:37,558 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 18:50:37,661 - test_response_interface.py - DEBUG - ..
+2021-02-19 18:50:37,762 - test_response_interface.py - DEBUG - .
+2021-02-19 18:50:37,863 - test_response_interface.py - DEBUG - .
+2021-02-19 18:50:37,964 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 18:50:43,997 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 15360
+FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-19 18:50:44,103 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 18:50:45,009 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 18:50:48,331 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 18:50:48,437 - test_response_interface.py - DEBUG - .FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 18:50:54,669 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 1598 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 16958
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 18:50:55,478 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fdelete L#487 
+FUNC_EXIT:   UFFS_Fdelete L#492 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fdelete L#487 
+
+2021-02-19 18:50:55,581 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fdelete L#492 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpClose L#296 
+FUNC_EXIT:   GSMmodule_FtpClose L#305 Return Code : 0 
+FUNC_EXIT:   FTP_uploadDataToServer L#173 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#301 File Uploaded Successfully
+DEBUG:   AWS_ConnectionManage L#136 -> CONNECTING TO MQTT SERVER..
+FUNC_ENTRY:   GSMmodule_MqttServerConnect L#105 
+
+2021-02-19 18:50:56,084 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#91 [#]Sync Completed Successfully
+
+2021-02-19 18:50:56,188 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#140 [#]Sync Task Finished!
+
+2021-02-19 18:51:13,377 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttServerConnect L#119 Return Code : 0 
+DEBUG:   vGsmTaskFunction L#38 [#]Gsm Module Going to Power Saving Mode
+DEBUG:   vGsmTaskFunction L#47 [#]Date: 21/2/19 Time: 18:51:13
+FUNC_ENTRY:   GSMmodule_DeInit L#134 
+
+2021-02-19 18:51:16,699 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#149 Return Code : 0 
+
+2021-02-19 19:00:56,200 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+
+2021-02-19 19:00:56,301 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+2021-02-19 19:00:56,403 - test_response_interface.py - DEBUG - 
+TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+DEBUG:   vGsmTaskFunction L#57 [#]Waking Up the Gsm Module
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-19 19:00:56,504 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-19 19:00:56,606 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#561 Return Code : -1 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-19 19:00:57,111 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-19 19:01:04,146 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-19 19:01:06,157 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: AT+CIMI
+404100531844034
+
+2021-02-19 19:01:06,260 - test_response_interface.py - DEBUG - 
+OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: AT+QCCID
+
+2021-02-19 19:01:06,361 - test_response_interface.py - DEBUG - 8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+
+2021-02-19 19:01:06,466 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+
+2021-02-19 19:01:06,567 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-19 19:01:06,769 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+DEBUG:   GSMmodule_Init L#117 AIRTELIOT.COM
+
+2021-02-19 19:01:06,871 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#104 
+
+2021-02-19 19:01:08,481 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#130 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#123 Return Code : 0 
+
+2021-02-19 19:01:08,686 - test_response_interface.py - DEBUG - $GNGLL,,,,,133108.274,V,N*6D
+
+2021-02-19 19:01:09,497 - test_response_interface.py - DEBUG - $GNGLL,2831.2814,N,07716.7111,E,133109.282,A,A*40
+
+2021-02-19 19:01:10,507 - test_response_interface.py - DEBUG - $GNGLL,2831.2831,N,07716.7102,E,133110.279,A,A*49
+
+2021-02-19 19:01:11,513 - test_response_interface.py - DEBUG - $GNGLL,2831.2838,N,07716.7098,E,133111.279,A,A*43
+
+2021-02-19 19:01:12,520 - test_response_interface.py - DEBUG - $GNGLL,2831.2841,N,07716.7094,E,133112.278,A,A*43
+
+2021-02-19 19:01:13,225 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#209 [#]GPRS CONFIGURED
+
+2021-02-19 19:01:13,528 - test_response_interface.py - DEBUG - $GNGLL,2831.2867,N,07716.7091,E,133113.278,A,A*43
+
+2021-02-19 19:01:14,433 - test_response_interface.py - DEBUG - $GNGLL,2831.2879,N,07716.7087,E,133114.276,A,A*42
+
+2021-02-19 19:01:15,444 - test_response_interface.py - DEBUG - $GNGLL,2831.2893,N,07716.7084,E,133115.275,A,A*47
+
+2021-02-19 19:01:16,449 - test_response_interface.py - DEBUG - $GNGLL,2831.2899,N,07716.7080,E,133116.274,A,A*4B
+
+2021-02-19 19:01:16,752 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#227 [#]IP Address: 10.90.161.160
+
+2021-02-19 19:01:16,855 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGPSFastfix L#141 
+FUNC_ENTRY:   GSMmodule_GetTimeSyncStatus L#29 
+FUNC_EXIT:   GSMmodule_GetTimeSyncStatus L#34 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SetRefLocFromGSMCoords L#40 
+FUNC_ENTRY:   GSMmodule_SetHttpUrl L#23 
+
+2021-02-19 19:01:16,957 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SetHttpUrl L#32 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_PostHttpData L#44 
+
+2021-02-19 19:01:17,461 - test_response_interface.py - DEBUG - $GNGLL,2831.2904,N,07716.7079,E,133117.272,A,A*4F
+
+2021-02-19 19:01:18,568 - test_response_interface.py - DEBUG - $GNGLL,2831.2912,N,07716.7077,E,133118.271,A,A*4A
+
+2021-02-19 19:01:19,473 - test_response_interface.py - DEBUG - $GNGLL,2831.2918,N,07716.7077,E,133119.270,A,A*40
+
+2021-02-19 19:01:19,978 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_PostHttpData L#53 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ReadHttpResponse L#65 
+
+2021-02-19 19:01:20,282 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ReadHttpResponse L#73 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SetRefLocFromGSMCoords L#83 Return Code : 0 
+
+2021-02-19 19:01:20,384 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGPSFastfix L#148 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#198 -> MQTT CONFIGURING!
+FUNC_ENTRY:   GSMmodule_ConfigMqttConnection L#25 
+
+2021-02-19 19:01:20,486 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigMqttConnection L#92 Return Code : 0 
+
+2021-02-19 19:01:20,589 - test_response_interface.py - DEBUG - $GNGLL,2831.2915,N,07716.7087,E,133120.273,A,A*4B
+DEBUG:   GSMmodule_GsmAppProcess L#391 [#]FETCHING GPRS STATE
+DEBUG:   AWS_ConnectionManage L#136 -> CONNECTING TO MQTT SERVER..
+FUNC_ENTRY:   GSMmodule_MqttServerConnect L#105 
+
+2021-02-19 19:01:24,409 - test_response_interface.py - DEBUG - $GNGLL,2831.2916,N,07716.7086,E,133122.000,A,A*4D
+
+2021-02-19 19:01:24,513 - test_response_interface.py - DEBUG - $GNGLL,2831.2917,N,07716.7087,E,133123.000,A,A*4C
+
+2021-02-19 19:01:24,614 - test_response_interface.py - DEBUG - $GNGLL,2831.2917,N,07716.7087,E,133124.000,A,A*4B
+
+2021-02-19 19:01:29,844 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttServerConnect L#119 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#160 -> SEND CLIENT CONN. PACKET
+FUNC_ENTRY:   GSMmodule_MqttConnect L#180 
+
+2021-02-19 19:01:31,156 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttConnect L#201 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#178 -> MQTT SUBSCRIBING TO TOPIC
+FUNC_ENTRY:   GSMmodule_MqttSubscribe L#244 
+
+2021-02-19 19:01:31,660 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttSubscribe L#260 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#318 [#]ASYNC EVENT: 16
+
+2021-02-19 19:01:31,763 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#327 [*]NEW TOKEN: 18717
+DEBUG:   GSMmodule_GsmAppProcess L#348  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"token":18717}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:01:31,865 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:01:31,966 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:01:36,996 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:01:37,098 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:01:42,125 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:01:42,227 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:01:42,329 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:01:47,355 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:01:52,484 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:01:52,589 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:01:57,617 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:01:57,718 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:02,745 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:02:02,847 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:07,876 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:02:07,977 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:13,005 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:02:13,107 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:18,235 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:23,362 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:02:23,473 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:28,497 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:02:28,601 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:33,629 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:02:33,730 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:38,764 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:02:38,868 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:43,892 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:02:43,994 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:49,021 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:02:49,125 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:54,255 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:02:54,361 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:02:59,389 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:04,515 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:03:04,619 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:09,647 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:03:09,749 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:14,777 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:03:14,879 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:19,905 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:03:20,006 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:25,033 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:03:25,135 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:03:25,242 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:30,264 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:35,391 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:03:35,492 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:40,520 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:03:40,621 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:45,648 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:03:45,750 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:50,775 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:03:50,880 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:03:56,008 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:03:56,110 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:01,136 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:06,267 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:06,369 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:11,395 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:11,497 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:16,525 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:16,627 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:21,657 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:21,763 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:26,789 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:26,891 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:32,020 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:32,121 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:37,147 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:37,249 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:42,277 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:42,378 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:47,406 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:47,507 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:52,533 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:52,635 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:04:57,663 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:04:57,765 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:02,893 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:08,021 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:05:08,126 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:13,153 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:05:13,255 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:18,283 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:05:18,385 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:23,411 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:05:23,517 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:28,543 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:05:28,645 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:33,773 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:38,905 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:05:39,007 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:44,035 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:05:44,137 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:49,163 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:05:49,267 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:54,294 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:05:54,395 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:05:59,423 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:05:59,525 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:04,555 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:06:04,656 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:09,783 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:06:09,884 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:14,912 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:20,039 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:06:20,140 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:25,170 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:06:25,272 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:30,299 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:06:30,401 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:35,427 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:06:35,529 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:40,658 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:06:40,760 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:45,786 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:50,913 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:06:51,019 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:06:56,048 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:06:56,150 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:01,176 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:07:01,281 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:06,307 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:07:06,413 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:11,439 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:07:11,541 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:07:11,643 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:16,671 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:21,799 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:07:21,900 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:26,928 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:07:27,030 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:32,058 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:07:32,160 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:37,186 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:07:37,292 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:42,320 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:07:42,426 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:47,556 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:52,684 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:07:52,786 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:07:57,812 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:07:57,919 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:08:02,946 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:08:03,047 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:08:08,074 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:08:08,180 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:08:13,210 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:08:13,312 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:08:18,340 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:08:18,442 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:08:23,569 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:08:23,671 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:08:28,698 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:08:33,825 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":1792,"gps":[28.5215244,77.2784729]}}}
+
+2021-02-19 19:08:33,930 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:08:36,748 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+
+2021-02-19 19:08:36,851 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-19 19:08:37,154 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+
+2021-02-19 19:08:37,258 - test_response_interface.py - DEBUG - DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+DEBUG:   vGsmTaskFunction L#38 [#]Gsm Module Going to Power Saving Mode
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+DEBUG:   vGsmTaskFunction L#47 [#]Date: 21/2/19 Time: 19:8:36
+FUNC_ENTRY:   GSMmodule_DeInit L#134 
+
+2021-02-19 19:08:40,579 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#149 Return Code : 0 
+
+2021-02-19 19:08:46,612 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#40 [#]Sync Task Triggered: 19:8:45
+
+2021-02-19 19:08:46,714 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#43 [#]Next Alarm Time: 2:0:0
+DEBUG:   vSyncTaskFunction L#46 [#]Free:66977792 Used:131072
+DEBUG:   CAN_AppInit L#229 [#]Can Stack Initialized: 1369290
+DEBUG:   vGsmTaskFunction L#57 [#]Waking Up the Gsm Module
+
+2021-02-19 19:08:46,816 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-19 19:08:53,954 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-19 19:08:56,068 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: AT+CIMI
+404100531844034
+
+OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: AT+QCCID
+8991102005318440342F
+
+2021-02-19 19:08:56,171 - test_response_interface.py - DEBUG - 
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+
+2021-02-19 19:08:56,273 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-19 19:08:56,375 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+
+2021-02-19 19:08:56,477 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#117 AIRTELIOT.COM
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#104 
+
+2021-02-19 19:08:58,088 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#130 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#123 Return Code : 0 
+$GNGLL,,,,,133857.862,V,N*63
+
+2021-02-19 19:08:58,994 - test_response_interface.py - DEBUG - $GNGLL,2831.3067,N,07716.7006,E,133858.841,A,A*42
+
+2021-02-19 19:09:00,101 - test_response_interface.py - DEBUG - $GNGLL,2831.3054,N,07716.7015,E,133859.843,A,A*43
+
+2021-02-19 19:09:01,007 - test_response_interface.py - DEBUG - $GNGLL,2831.3027,N,07716.7023,E,133900.842,A,A*4E
+
+2021-02-19 19:09:02,013 - test_response_interface.py - DEBUG - $GNGLL,2831.3022,N,07716.7028,E,133901.845,A,A*46
+
+2021-02-19 19:09:03,019 - test_response_interface.py - DEBUG - $GNGLL,2831.3042,N,07716.7033,E,133902.846,A,A*4A
+
+2021-02-19 19:09:03,222 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#209 [#]GPRS CONFIGURED
+
+2021-02-19 19:09:04,027 - test_response_interface.py - DEBUG - $GNGLL,2831.2977,N,07716.7079,E,133903.862,A,A*4D
+
+2021-02-19 19:09:05,136 - test_response_interface.py - DEBUG - $GNGLL,2831.2971,N,07716.7080,E,133905.000,A,A*47
+
+2021-02-19 19:09:06,142 - test_response_interface.py - DEBUG - $GNGLL,2831.2965,N,07716.7079,E,133906.000,A,A*47
+
+2021-02-19 19:09:06,850 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#227 [#]IP Address: 10.126.75.134
+FUNC_ENTRY:   GSMmodule_ConfigureGPSFastfix L#141 
+FUNC_ENTRY:   GSMmodule_GetTimeSyncStatus L#29 
+FUNC_EXIT:   GSMmodule_GetTimeSyncStatus L#34 Return Code : 0 
+
+2021-02-19 19:09:06,952 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_SetRefLocFromGSMCoords L#40 
+FUNC_ENTRY:   GSMmodule_SetHttpUrl L#23 
+FUNC_EXIT:   GSMmodule_SetHttpUrl L#32 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_PostHttpData L#44 
+
+2021-02-19 19:09:07,154 - test_response_interface.py - DEBUG - $GNGLL,2831.2963,N,07716.7080,E,133907.000,A,A*46
+
+2021-02-19 19:09:08,164 - test_response_interface.py - DEBUG - $GNGLL,2831.2962,N,07716.7080,E,133908.000,A,A*48
+
+2021-02-19 19:09:09,171 - test_response_interface.py - DEBUG - $GNGLL,2831.2962,N,07716.7082,E,133909.000,A,A*4B
+
+2021-02-19 19:09:10,280 - test_response_interface.py - DEBUG - $GNGLL,2831.2961,N,07716.7082,E,133910.000,A,A*40
+
+2021-02-19 19:09:11,287 - test_response_interface.py - DEBUG - $GNGLL,2831.2963,N,07716.7083,E,133911.000,A,A*42
+
+2021-02-19 19:09:13,297 - test_response_interface.py - DEBUG - $GNGLL,2831.2967,N,07716.7084,E,133913.000,A,A*43
+
+2021-02-19 19:09:14,304 - test_response_interface.py - DEBUG - $GNGLL,2831.2968,N,07716.7084,E,133914.000,A,A*4B
+
+2021-02-19 19:09:15,310 - test_response_interface.py - DEBUG - $GNGLL,2831.2969,N,07716.7084,E,133915.000,A,A*4B
+
+2021-02-19 19:09:16,317 - test_response_interface.py - DEBUG - $GNGLL,2831.2969,N,07716.7085,E,133916.000,A,A*49
+
+2021-02-19 19:09:17,222 - test_response_interface.py - DEBUG - $GNGLL,2831.2970,N,07716.7085,E,133917.000,A,A*40
+
+2021-02-19 19:09:18,228 - test_response_interface.py - DEBUG - $GNGLL,2831.2970,N,07716.7085,E,133918.000,A,A*4F
+
+2021-02-19 19:09:19,234 - test_response_interface.py - DEBUG - $GNGLL,2831.2971,N,07716.7085,E,133919.000,A,A*4F
+
+2021-02-19 19:09:20,243 - test_response_interface.py - DEBUG - $GNGLL,2831.2971,N,07716.7086,E,133920.000,A,A*46
+
+2021-02-19 19:09:21,248 - test_response_interface.py - DEBUG - $GNGLL,2831.2971,N,07716.7085,E,133921.000,A,A*44
+
+2021-02-19 19:09:22,256 - test_response_interface.py - DEBUG - $GNGLL,2831.2970,N,07716.7085,E,133922.000,A,A*46
+FUNC_EXIT:   GSMmodule_PostHttpData L#53 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ReadHttpResponse L#65 
+
+2021-02-19 19:09:22,664 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ReadHttpResponse L#73 Return Code : 0 
+
+2021-02-19 19:09:22,866 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SetRefLocFromGSMCoords L#83 Return Code : 0 
+FUNC_EXIT:   GSMmodule_ConfigureGPSFastfix L#148 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#198 -> MQTT CONFIGURING!
+
+2021-02-19 19:09:22,972 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigMqttConnection L#25 
+FUNC_EXIT:   GSMmodule_ConfigMqttConnection L#92 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#391 [#]FETCHING GPRS STATE
+
+2021-02-19 19:09:23,074 - test_response_interface.py - DEBUG - DEBUG:   AWS_ConnectionManage L#136 -> CONNECTING TO MQTT SERVER..
+FUNC_ENTRY:   GSMmodule_MqttServerConnect L#105 
+
+2021-02-19 19:09:26,091 - test_response_interface.py - DEBUG - $GNGLL,2831.2972,N,07716.7085,E,133924.000,A,A*42
+
+2021-02-19 19:09:26,193 - test_response_interface.py - DEBUG - $GNGLL,2831.2976,N,07716.7085,E,133925.000,A,A*47
+
+2021-02-19 19:09:26,294 - test_response_interface.py - DEBUG - $GNGLL,2831.2978,N,07716.7085,E,133926.000,A,A*4A
+
+2021-02-19 19:09:31,724 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttServerConnect L#119 Return Code : 0 
+
+2021-02-19 19:09:31,826 - test_response_interface.py - DEBUG - DEBUG:   AWS_ConnectionManage L#160 -> SEND CLIENT CONN. PACKET
+FUNC_ENTRY:   GSMmodule_MqttConnect L#180 
+
+2021-02-19 19:09:32,129 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttConnect L#201 Return Code : 0 
+
+2021-02-19 19:09:32,231 - test_response_interface.py - DEBUG - DEBUG:   AWS_ConnectionManage L#178 -> MQTT SUBSCRIBING TO TOPIC
+FUNC_ENTRY:   GSMmodule_MqttSubscribe L#244 
+
+2021-02-19 19:09:33,842 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttSubscribe L#260 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#318 [#]ASYNC EVENT: 16
+DEBUG:   GSMmodule_GsmAppProcess L#327 [*]NEW TOKEN: 18717
+DEBUG:   GSMmodule_GsmAppProcess L#348  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"token":18717}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:09:33,947 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"gps":[28.5216179,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:09:34,051 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:09:39,081 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"gps":[28.5216179,77.2784729]}}}
+FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+
+2021-02-19 19:09:39,185 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:09:44,110 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#384  -- SHADOW UPDATE: {"state":{"reported":{"vsr":0,"gps":[28.5216179,77.2784729]}}}
+
+2021-02-19 19:09:44,213 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_MqttPublish L#214 
+FUNC_EXIT:   GSMmodule_MqttPublish L#232 Return Code : 0 
+
+2021-02-19 19:09:45,822 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#119 [#]Starting File Upload
+FUNC_ENTRY:   GSMmodule_MqttServerDisconnect L#130 
+
+2021-02-19 19:09:45,925 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttServerDisconnect L#144 Return Code : 0 
+FUNC_ENTRY:   FTP_uploadDataToServer L#55 
+FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 53494 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#405 Return Code : -1 
+DEBUG:   FTP_uploadDataToServer L#64 Filesize: 53494
+DEBUG:   FTP_uploadDataToServer L#65 Size to Upload: 53494
+
+2021-02-19 19:09:46,030 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpOpenConnection L#64 
+
+2021-02-19 19:09:50,656 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpOpenConnection L#99 Return Code : 0 
+
+2021-02-19 19:09:50,761 - test_response_interface.py - DEBUG - DEBUG:   FTP_uploadDataToServer L#71 FTP Connection Open
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   FTP_uploadDataToServer L#89 Total FTP Requests: 11
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:09:52,172 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 19:09:52,277 - test_response_interface.py - DEBUG - .
+2021-02-19 19:09:52,378 - test_response_interface.py - DEBUG - .
+2021-02-19 19:09:52,483 - test_response_interface.py - DEBUG - .
+2021-02-19 19:09:52,585 - test_response_interface.py - DEBUG - .
+2021-02-19 19:09:52,686 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:09:58,716 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 5120
+
+2021-02-19 19:09:58,820 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-19 19:09:59,122 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:09:59,628 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:10:02,846 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 19:10:02,947 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:03,048 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:03,149 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:03,251 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:03,352 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:10:09,485 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 10240
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-19 19:10:09,589 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:10:10,092 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:10:11,802 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 19:10:11,903 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:12,004 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:12,108 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:12,207 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:12,308 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:10:18,341 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 15360
+FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-19 19:10:18,443 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:10:21,157 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:10:26,490 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+
+2021-02-19 19:10:26,592 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:26,693 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:26,799 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:26,897 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:26,997 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:27,099 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:10:33,132 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 20480
+FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-19 19:10:33,234 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:10:33,838 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:10:35,650 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+
+2021-02-19 19:10:35,755 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:35,857 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:35,958 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:36,059 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:36,160 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:36,262 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:10:42,298 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 25600
+FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-19 19:10:42,401 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:10:42,804 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:10:44,820 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 19:10:44,922 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:45,123 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:45,224 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:45,326 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:45,427 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:10:51,460 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 30720
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+
+2021-02-19 19:10:51,565 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:10:51,869 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:10:53,583 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 19:10:53,687 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:53,788 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:53,890 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:53,991 - test_response_interface.py - DEBUG - .
+2021-02-19 19:10:54,093 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:11:00,225 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 35840
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:11:01,031 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:11:03,849 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 19:11:03,954 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:04,054 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:04,155 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:04,256 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:04,357 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:11:10,393 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 40960
+
+2021-02-19 19:11:10,495 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:11:11,100 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:11:12,810 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 19:11:12,912 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:13,013 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:13,114 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:13,216 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:13,317 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:11:19,449 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 46080
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:11:20,457 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:11:23,776 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+
+2021-02-19 19:11:23,880 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:23,982 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:24,083 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:24,184 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:24,285 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:24,387 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:11:36,450 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 5120 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 51200
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:11:38,265 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpPutFile L#138 
+
+2021-02-19 19:11:51,230 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#147 Return Code : 0 
+.
+2021-02-19 19:11:51,335 - test_response_interface.py - DEBUG - .
+2021-02-19 19:11:51,437 - test_response_interface.py - DEBUG - .FUNC_ENTRY:   GSMmodule_FtpPutFile L#121 
+
+2021-02-19 19:11:57,669 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpPutFile L#132 Return Code : 2294 
+DEBUG:   FTP_uploadDataToServer L#143 Resume Point: 53494
+FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-19 19:11:57,771 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpResumePut L#158 
+
+2021-02-19 19:11:58,477 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpResumePut L#176 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-19 19:11:58,580 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fdelete L#487 
+FUNC_EXIT:   UFFS_Fdelete L#492 Return Code : 0 
+FUNC_ENTRY:   UFFS_Fdelete L#487 
+FUNC_EXIT:   UFFS_Fdelete L#492 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpClose L#296 
+FUNC_EXIT:   GSMmodule_FtpClose L#305 Return Code : 0 
+FUNC_EXIT:   FTP_uploadDataToServer L#173 Return Code : 0 
+
+2021-02-19 19:11:58,681 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#301 File Uploaded Successfully
+DEBUG:   AWS_ConnectionManage L#136 -> CONNECTING TO MQTT SERVER..
+FUNC_ENTRY:   GSMmodule_MqttServerConnect L#105 
+
+2021-02-19 19:11:58,785 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#91 [#]Sync Completed Successfully
+
+2021-02-19 19:11:58,987 - test_response_interface.py - DEBUG - DEBUG:   vSyncTaskFunction L#140 [#]Sync Task Finished!
+
+2021-02-19 19:12:08,139 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_MqttServerConnect L#119 Return Code : 0 
+DEBUG:   vGsmTaskFunction L#38 [#]Gsm Module Going to Power Saving Mode
+DEBUG:   vGsmTaskFunction L#47 [#]Date: 21/2/19 Time: 19:12:7
+
+2021-02-19 19:12:08,241 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_DeInit L#134 
+
+2021-02-19 19:12:11,562 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#149 Return Code : 0 
+
+2021-02-20 00:12:08,187 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+
+2021-02-20 00:12:08,288 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+
+2021-02-20 00:12:08,394 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+fd  : @306 - invalid fd: 0 (sig: -1, expect: 0)
+DEBUG:   vGsmTaskFunction L#57 [#]Waking Up the Gsm Module
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-20 00:12:08,499 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-20 00:12:08,901 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 7933 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-20 00:12:09,002 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-20 00:12:15,636 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-20 00:12:17,747 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: AT+CIMI
+404100531844034
+
+OK
+
+2021-02-20 00:12:17,852 - test_response_interface.py - DEBUG - 
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: AT+QCCID
+8991102005318440342F
+
+OK
+
+2021-02-20 00:12:17,954 - test_response_interface.py - DEBUG - 
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+
+2021-02-20 00:12:18,055 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+
+2021-02-20 00:12:18,157 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-20 00:12:18,258 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+
+2021-02-20 00:12:18,362 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#117 AIRTELIOT.COM
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#104 
+
+2021-02-20 00:12:19,971 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#130 Return Code : 0 
+
+2021-02-20 00:12:20,072 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_Init L#123 Return Code : 0 
+
+2021-02-20 00:12:20,174 - test_response_interface.py - DEBUG - $GNGLL,,,,,184219.805,V,N*6E
+
+2021-02-20 00:12:20,978 - test_response_interface.py - DEBUG - $GNGLL,,,,,184220.805,V,N*64
+
+2021-02-20 00:12:21,986 - test_response_interface.py - DEBUG - $GNGLL,,,,,184221.805,V,N*65
+
+2021-02-20 00:12:22,992 - test_response_interface.py - DEBUG - $GNGLL,,,,,184222.805,V,N*66
+
+2021-02-20 00:12:23,997 - test_response_interface.py - DEBUG - $GNGLL,,,,,184223.805,V,N*67
+
+2021-02-20 00:12:25,003 - test_response_interface.py - DEBUG - $GNGLL,,,,,184224.805,V,N*60
+DEBUG:   GSMmodule_GsmAppProcess L#209 [#]GPRS CONFIGURED
+
+2021-02-20 00:12:26,008 - test_response_interface.py - DEBUG - $GNGLL,,,,,184225.805,V,N*61
+
+2021-02-20 00:12:27,014 - test_response_interface.py - DEBUG - $GNGLL,,,,,184226.805,V,N*62
+
+2021-02-20 00:12:27,922 - test_response_interface.py - DEBUG - $GNGLL,,,,,184227.805,V,N*63
+
+2021-02-20 00:12:28,124 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+
+2021-02-20 00:12:28,226 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-20 00:12:28,428 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_GsmAppProcess L#227 [#]IP Address: 10.126.196.228
+FUNC_ENTRY:   GSMmodule_ConfigureGPSFastfix L#141 
+FUNC_ENTRY:   GSMmodule_GetTimeSyncStatus L#29 
+
+2021-02-20 00:12:28,532 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_GetTimeSyncStatus L#34 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SetRefLocFromGSMCoords L#40 
+FUNC_ENTRY:   GSMmodule_SetHttpUrl L#23 
+DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+
+2021-02-20 00:12:28,634 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SetHttpUrl L#32 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_PostHttpData L#44 
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-20 00:12:29,036 - test_response_interface.py - DEBUG - $GNGLL,,,,,184228.805,V,N*6C
+
+2021-02-20 00:12:30,041 - test_response_interface.py - DEBUG - $GNGLL,,,,,184229.805,V,N*6D
+
+2021-02-20 00:12:31,047 - test_response_interface.py - DEBUG - $GNGLL,,,,,184230.805,V,N*65
+
+2021-02-20 00:12:31,554 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_PostHttpData L#53 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_ReadHttpResponse L#65 
+
+2021-02-20 00:12:31,957 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ReadHttpResponse L#73 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SetRefLocFromGSMCoords L#83 Return Code : 0 
+FUNC_EXIT:   GSMmodule_ConfigureGPSFastfix L#148 Return Code : 0 
+DEBUG:   AWS_ConnectionManage L#198 -> MQTT CONFIGURING!
+
+2021-02-20 00:12:32,060 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigMqttConnection L#25 
+FUNC_EXIT:   GSMmodule_ConfigMqttConnection L#92 Return Code : 0 
+DEBUG:   GSMmodule_GsmAppProcess L#391 [#]FETCHING GPRS STATE
+
+2021-02-20 00:12:32,161 - test_response_interface.py - DEBUG - DEBUG:   vGsmTaskFunction L#38 [#]Gsm Module Going to Power Saving Mode
+$GNGLL,,,,,184231.791,V,N*66
+DEBUG:   vGsmTaskFunction L#47 [#]Date: 21/2/20 Time: 0:12:31
+FUNC_ENTRY:   GSMmodule_DeInit L#134 
+
+2021-02-20 00:12:35,477 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#149 Return Code : 0 
+
+2021-02-20 00:18:18,308 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+
+2021-02-20 00:18:18,410 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+
+2021-02-20 00:18:18,513 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+DEBUG:   vGsmTaskFunction L#57 [#]Waking Up the Gsm Module
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-20 00:18:18,613 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-20 00:18:18,924 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 10042 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-20 00:18:21,742 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+
+2021-02-20 00:18:21,843 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-20 00:18:22,247 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+
+2021-02-20 00:18:22,452 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-20 00:18:24,968 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+
+2021-02-20 00:18:25,069 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+2021-02-20 00:18:25,171 - test_response_interface.py - DEBUG - 
+TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+
+2021-02-20 00:18:25,272 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-20 00:18:25,474 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 10288 
+
+2021-02-20 00:18:25,576 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-20 00:18:25,879 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-20 00:18:27,989 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: AT+CIMI
+404100531844034
+
+OK
+
+2021-02-20 00:18:28,090 - test_response_interface.py - DEBUG - 
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: AT+QCCID
+8991102005318440342F
+
+
+2021-02-20 00:18:28,192 - test_response_interface.py - DEBUG - OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+
+2021-02-20 00:18:28,293 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+
+2021-02-20 00:18:28,397 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-20 00:18:28,498 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+
+2021-02-20 00:18:28,599 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#117 AIRTELIOT.COM
+FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#104 
+
+2021-02-20 00:18:28,802 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+
+2021-02-20 00:18:29,104 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fclose L#416 
+
+2021-02-20 00:18:29,205 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-20 00:18:30,211 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#130 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#123 Return Code : 0 
+DEBUG:   vGsmTaskFunction L#38 [#]Gsm Module Going to Power Saving Mode
+DEBUG:   vGsmTaskFunction L#47 [#]Date: 21/2/20 Time: 0:18:29
+$GNGLL,,,,,184829.985,V,N*6E
+FUNC_ENTRY:   GSMmodule_DeInit L#134 
+
+2021-02-20 00:18:31,621 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+
+2021-02-20 00:18:31,723 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+
+2021-02-20 00:18:31,824 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-20 00:18:32,227 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 10534 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-20 00:18:33,635 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#149 Return Code : 0 
+DEBUG:   vGsmTaskFunction L#57 [#]Waking Up the Gsm Module
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-20 00:18:34,947 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-20 00:18:35,250 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+
+2021-02-20 00:18:35,352 - test_response_interface.py - DEBUG - DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-20 00:18:38,067 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+
+2021-02-20 00:18:38,169 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+2021-02-20 00:18:38,270 - test_response_interface.py - DEBUG - 
+TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+
+2021-02-20 00:18:38,372 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 10780 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-20 00:18:38,479 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-20 00:18:39,684 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-20 00:18:41,494 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+
+2021-02-20 00:18:41,595 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-20 00:18:41,898 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+
+2021-02-20 00:18:42,003 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-20 00:18:44,718 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+
+2021-02-20 00:18:44,819 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+
+2021-02-20 00:18:44,920 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-20 00:18:45,021 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fsize L#552 
+FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 11026 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+
+2021-02-20 00:18:45,122 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-20 00:18:46,732 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: AT+CIMI
+
+2021-02-20 00:18:46,833 - test_response_interface.py - DEBUG - 404100531844034
+
+OK
+
+
+2021-02-20 00:18:46,935 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: AT+QCCID
+8991102005318440342F
+
+OK
+
+
+2021-02-20 00:18:47,037 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+
+2021-02-20 00:18:47,139 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+
+2021-02-20 00:18:47,240 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-20 00:18:47,341 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+DEBUG:   GSMmodule_Init L#117 AIRTELIOT.COM
+
+2021-02-20 00:18:47,443 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#104 
+
+2021-02-20 00:18:47,946 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+
+2021-02-20 00:18:48,051 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-20 00:18:48,352 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+
+2021-02-20 00:18:48,455 - test_response_interface.py - DEBUG - DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+
+2021-02-20 00:18:48,656 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-20 00:18:49,059 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#130 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#123 Return Code : 0 
+DEBUG:   vGsmTaskFunction L#38 [#]Gsm Module Going to Power Saving Mode
+DEBUG:   vGsmTaskFunction L#47 [#]Date: 21/2/20 Time: 0:18:48
+FUNC_ENTRY:   GSMmodule_DeInit L#134 
+
+2021-02-20 00:18:49,160 - test_response_interface.py - DEBUG - $GNGLL,,,,,184848.833,V,N*65
+
+2021-02-20 00:18:52,476 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#149 Return Code : 0 
+
+2021-02-20 00:21:25,830 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+
+2021-02-20 00:21:25,931 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#141 [*]VEHICLE_WAKEUP
+
+2021-02-20 00:21:26,033 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#165 [*]VEHICLE_UNLOCK
+
+TEMPLATE - initialization
+DEBUG:   vMiscTaskFunction L#111 [*]Sending Unlock Signal to Gsm Module Task
+DEBUG:   vGsmTaskFunction L#57 [#]Waking Up the Gsm Module
+FUNC_ENTRY:   GSMmodule_Init L#57 
+
+2021-02-20 00:21:26,134 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#206 [*]VEHICLE_UNLOCKED
+
+2021-02-20 00:21:26,436 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fsize L#552 
+
+2021-02-20 00:21:26,538 - test_response_interface.py - DEBUG - FUNC_EXIT:   UFFS_Fsize L#565 Return Code : 11272 
+FUNC_ENTRY:   UFFS_Fopen L#395 
+FUNC_EXIT:   UFFS_Fopen L#402 Return Code : 0 
+DEBUG:   vDatalogTaskFunction L#37 [*]Starting Data  Logging
+
+2021-02-20 00:21:30,257 - test_response_interface.py - DEBUG - DEBUG:   HAL_GPIO_EXTI_Callback L#56 0x4
+DEBUG:   HAL_GPIO_EXTI_Callback L#105 [*]KEY LOCK CALLBACK
+
+2021-02-20 00:21:30,360 - test_response_interface.py - DEBUG - DEBUG:   VEHICLE_FsmProcess L#237 [*]VEHICLE LOCKED
+DEBUG:   VEHICLE_FsmProcess L#244 [*]VEHICLE GOING TO SLEEP
+
+2021-02-20 00:21:30,663 - test_response_interface.py - DEBUG - DEBUG:   vMiscTaskFunction L#44 [*]Sending Lock Signal
+DEBUG:   App_sendRideDetails L#195 [*]Auth Token '18717' Updated!
+
+2021-02-20 00:21:30,764 - test_response_interface.py - DEBUG - DEBUG:   App_sendRideDetails L#217 {"data":["877045D21DBB4A7A3D0CCDBFF937586E",0.0]}
+DEBUG:   vMiscTaskFunction L#65 [*]Sending Sleep Signal to GSM Module Task
+
+2021-02-20 00:21:31,167 - test_response_interface.py - DEBUG - FUNC_ENTRY:   UFFS_Fclose L#416 
+FUNC_EXIT:   UFFS_Fclose L#422 Return Code : 0 
+
+2021-02-20 00:21:33,281 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_Init L#73 [#]MODULE CONFIGURED
+
+2021-02-20 00:21:35,291 - test_response_interface.py - DEBUG - DEBUG:   GSMmodule_CheckSim L#161 [#]IMSI: AT+CIMI
+404100531844034
+
+
+2021-02-20 00:21:35,395 - test_response_interface.py - DEBUG - OK
+
+DEBUG:   GSMmodule_CheckSim L#163 [#]CCID: AT+QCCID
+8991102005318440342F
+
+OK
+
+FUNC_ENTRY:   GSMmodule_FtpSetUser L#23 
+
+2021-02-20 00:21:35,497 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_FtpSetUser L#31 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_FtpSetPassword L#43 
+FUNC_EXIT:   GSMmodule_FtpSetPassword L#52 Return Code : 0 
+FUNC_ENTRY:   GSMmodule_SSLFlashCert L#57 
+
+2021-02-20 00:21:35,598 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLFlashCert L#88 Return Code : 0 
+FUNC_EXIT:   GSMmodule_SSLConfig L#99 
+
+2021-02-20 00:21:35,700 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_SSLConfig L#148 Return Code : 0 
+DEBUG:   GSMmodule_Init L#117 AIRTELIOT.COM
+
+2021-02-20 00:21:35,801 - test_response_interface.py - DEBUG - FUNC_ENTRY:   GSMmodule_ConfigureGNSS L#104 
+
+2021-02-20 00:21:37,310 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_ConfigureGNSS L#130 Return Code : 0 
+FUNC_EXIT:   GSMmodule_Init L#123 Return Code : 0 
+
+2021-02-20 00:21:37,411 - test_response_interface.py - DEBUG - DEBUG:   vGsmTaskFunction L#38 [#]Gsm Module Going to Power Saving Mode
+DEBUG:   vGsmTaskFunction L#47 [#]Date: 21/2/20 Time: 0:21:36
+FUNC_ENTRY:   GSMmodule_DeInit L#134 
+$GNGLL,,,,,185137.161,V,N*6B
+
+2021-02-20 00:21:40,728 - test_response_interface.py - DEBUG - FUNC_EXIT:   GSMmodule_DeInit L#149 Return Code : 0 
+
