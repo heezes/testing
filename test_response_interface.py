@@ -63,7 +63,7 @@ class interface():
     """
     @brief: Callback function for disconnection notification
     """
-    def Disconnected(self):
+    def Disconnected(self, event):
         print ("disconnected from BLE")
 
     """
