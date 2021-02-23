@@ -186,3 +186,5 @@
 2021-02-22 19:37:40,496 - test_cases - DEBUG - Lock Test Results - Passed: True 
 2021-02-23 19:58:25,949 - test_cases - DEBUG - Unlock Test Results - Passed: True 
 2021-02-23 20:00:41,261 - test_cases - DEBUG - Lock Test Results - Passed: True 
+2021-02-23 20:21:25,140 - test_cases - DEBUG - Unlock Test Results - Passed: True 
+2021-02-23 20:40:31,914 - test_cases - DEBUG - Lock Test Results - Passed: True 
