@@ -9,7 +9,7 @@ import threading
 from logging.handlers import RotatingFileHandler
 
 class interface():
-    def __init__(self, data_queue, device_addr, ble_interface=True):
+    def __init__(self, data_queue, device_addr, ble_interface):
         #intialize the vim response mechanism
         self.device = 0
         self.socket = 0
@@ -17,7 +17,7 @@ class interface():
         self.device_addr = device_addr
         self.data_queue.append(data_queue[0])
         self.data_queue.append(data_queue[1])
-        self.ble_interface = interface #Use BLE interface
+        self.ble_interface = ble_interface #Use BLE interface
         self.opcode_response = None #BLE opcode response for a command
         self.logger = logging.getLogger('test_response_interface.py')
         self.logger.setLevel(logging.DEBUG)
@@ -30,7 +30,7 @@ class interface():
         handler.setFormatter(formatter)
         # add the file handler to the logger
         self.logger.addHandler(handler)
-        self.connectToInterface(interface)
+        self.connectToInterface()
 
 
 
@@ -68,15 +68,17 @@ class interface():
 
     """
     @brief: This function initializes the response interface
-    @param: interface: Response interface(For now only ble is supported. Rtt physical via openocd could be an option)
     """
-    def connectToInterface(self, interface):
+    def connectToInterface(self):
         adapter = pygatt.GATTToolBackend(search_window_size=200)
         adapter.start()
         device_info = adapter.filtered_scan(self.device_addr, timeout=1)
-        dev_info = device_info[0]
-        print("Connecting to device %s:%s"%(self.device_addr, dev_info['address']))
+        try:
+            print("Connecting to device %s:%s"%(self.device_addr, device_info[0]['address']))
+        except:
+            print("BLE device not found!")
         if(device_info):
+            dev_info = device_info[0]
             self.device = adapter.connect(dev_info['address'], address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
             self.device.register_disconnect_callback(self.Disconnected)
             self.device.exchange_mtu(128)
@@ -96,10 +98,10 @@ class interface():
                 self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75fba",\
                                 callback=self.received_data_cb,\
                                 indication=False)
-            else:
-                self.connectToRttServer()
-                rttThread = threading.Thread(target=self.retrieveRttData)
-                rttThread.start()
+        else:
+            self.connectToRttServer()
+            rttThread = threading.Thread(target=self.retrieveRttData)
+            rttThread.start()
         # self.connectToRttServer()
         # rttThread = threading.Thread(target=self.retrieveRttData)
         # rttThread.start()
@@ -146,3 +148,4 @@ class interface():
                     # print(data)
                 except Exception as e:
                     print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
+

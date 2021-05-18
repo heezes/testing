@@ -23,13 +23,13 @@ def main():
     '''
     parser = argparse.ArgumentParser(description='Target Device Name')
     parser.add_argument('--device_addr', action="store", dest='device_addr')
-    parser.add_argument('--ble_interface', action="store", dest='ble_interface')
     args = parser.parse_args()
     data_queue = []
     data_queue.append(queue.Queue())
+cd ..
     data_queue.append(queue.Queue())
     iot = test_mqtt.Mqtt(data_queue[0])
-    interface = test_response_interface.interface(data_queue, args.device_addr, args.ble_interface)
+    interface = test_response_interface.interface(data_queue, args.device_addr, ble_interface=False)
     test_case = test_cases.test_cases(data_queue[1], interface)
     x = threading.Thread(target=test_case.processResponse)
     x.start()
@@ -121,4 +121,3 @@ Main Application: Yet to decide
 
 
 '''
-
