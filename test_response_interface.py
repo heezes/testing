@@ -70,29 +70,30 @@ class interface():
     @brief: This function initializes the response interface
     """
     def connectToInterface(self):
-        adapter = pygatt.GATTToolBackend(search_window_size=200)
-        adapter.start()
-        device_info = adapter.filtered_scan(self.device_addr, timeout=1)
-        try:
-            print("Connecting to device %s:%s"%(self.device_addr, device_info[0]['address']))
-        except:
-            print("BLE device not found!")
-        if(device_info):
-            dev_info = device_info[0]
-            self.device = adapter.connect(dev_info['address'], address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
-            self.device.register_disconnect_callback(self.Disconnected)
-            self.device.exchange_mtu(128)
-            self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75eba",\
-                            callback=self.data_handler_cb,\
-                            indication=False)
-            self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x01]), True)
-            print("Auth Command Written")
-            token = b'\x1d\x49\x00\x00'
-            self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75fba", token, True)
-            print("Authenticated")
-            # while self.opcode_response != 0x01:
-            #     pass
-            if self.ble_interface == True:
+        if self.ble_interface == True:
+            adapter = pygatt.GATTToolBackend(search_window_size=200)
+            adapter.start()
+            device_info = adapter.filtered_scan(self.device_addr, timeout=1)
+            try:
+                print("Connecting to device %s:%s"%(self.device_addr, device_info[0]['address']))
+            except:
+                print("BLE device not found!")
+            if(device_info):
+                dev_info = device_info[0]
+                self.device = adapter.connect(dev_info['address'], address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
+                self.device.register_disconnect_callback(self.Disconnected)
+                self.device.exchange_mtu(128)
+                self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75eba",\
+                                callback=self.data_handler_cb,\
+                                indication=False)
+                self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x01]), True)
+                print("Auth Command Written")
+                token = b'\x1d\x49\x00\x00'
+                self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75fba", token, True)
+                print("Authenticated")
+                # while self.opcode_response != 0x01:
+                #     pass
+                
                 self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x0C]), True)
                 print("Enabling Debug")
                 self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75fba",\
@@ -112,18 +113,23 @@ class interface():
     @param: command: Ble command to perform a certain activity
     """
     def sendCommand(self, command):
-        if(self.device._connected):
-            self.opcode_response = None
-            self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([command]), True)
-            # while self.opcode_response == None:
-            #     time.sleep(0.5)
-            #     pass
-            # print("Response %s"%self.opcode_response)
-            # return self.opcode_response
-            return True
+        if self.ble_interface == True:
+            if(self.device._connected):
+                self.opcode_response = None
+                self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([command]), True)
+                # while self.opcode_response == None:
+                #     time.sleep(0.5)
+                #     pass
+                # print("Response %s"%self.opcode_response)
+                # return self.opcode_response
+                return True
+            else:
+                print("BLE not connected")
+                return False
         else:
-            print("BLE not connected")
+            print("RTT Interface selected")
             return False
+
 
     """
     @brief: This function creates a localhost connection to rtt server hosted by openocd
