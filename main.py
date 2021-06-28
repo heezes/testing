@@ -15,6 +15,16 @@ import sh
 BLE_INTERFACE = 1
 RTT_INTERFACE = 2
 
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+
 def main():
     '''
     Create two queue with and append them within an array
@@ -24,7 +34,7 @@ def main():
     time.sleep(1)
     parser = argparse.ArgumentParser(description='Target Device Name')
     parser.add_argument('--device_addr', action="store", dest='device_addr')
-    parser.add_argument('--ble_interface', action="store", dest='ble_interface')
+    parser.add_argument('--ble_interface', action="store", dest='ble_interface', type=str2bool)
     args = parser.parse_args()
     data_queue = []
     data_queue.append(queue.Queue())
