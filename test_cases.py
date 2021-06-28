@@ -47,6 +47,8 @@ class test_cases():
                 self.log.debug('Lock Failed') #Lock Failed
                 results =  False
         else:
+            self.ble.sendCommand(0x02)
+            time.sleep(0.5)
             self.ble.sendCommand(0x06)
             if(self.parser.getLockResult(wait_time) == False):
                 self.log.debug('Lock Failed') #Lock Failed
