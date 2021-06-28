@@ -93,19 +93,18 @@ class interface():
                 print("Authenticated")
                 # while self.opcode_response != 0x01:
                 #     pass
-                
-                self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x0C]), True)
+               # self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x0C]), True)
                 print("Enabling Debug")
                 self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75fba",\
                                 callback=self.received_data_cb,\
                                 indication=False)
-        else:
+#        else:
+#            self.connectToRttServer()
+#            rttThread = threading.Thread(target=self.retrieveRttData)
+#            rttThread.start()
             self.connectToRttServer()
             rttThread = threading.Thread(target=self.retrieveRttData)
             rttThread.start()
-        # self.connectToRttServer()
-        # rttThread = threading.Thread(target=self.retrieveRttData)
-        # rttThread.start()
 
 
     """

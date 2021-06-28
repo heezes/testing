@@ -21,6 +21,7 @@ def main():
     Queue one is used to send realtime logs to mqtt server(Can be avoided by calling publish in ble callback)
     Queue two is used to parse and record the vehicle logs
     '''
+    time.sleep(1)
     parser = argparse.ArgumentParser(description='Target Device Name')
     parser.add_argument('--device_addr', action="store", dest='device_addr')
     parser.add_argument('--ble_interface', action="store", dest='ble_interface')
