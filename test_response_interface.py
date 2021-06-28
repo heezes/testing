@@ -83,7 +83,7 @@ class interface():
                 dev_info = device_info[0]
                 self.device = adapter.connect(dev_info['address'], address_type = pygatt.BLEAddressType.random, auto_reconnect=True)
                 self.device.register_disconnect_callback(self.Disconnected)
-                self.device.exchange_mtu(128)
+                self.device.exchange_mtu(512)
                 self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75eba",\
                                 callback=self.data_handler_cb,\
                                 indication=False)
@@ -96,9 +96,9 @@ class interface():
                 #     pass
                # self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([0x0C]), True)
                 print("Enabling Debug")
-                self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75fba",\
-                                callback=self.received_data_cb,\
-                                indication=False)
+                # self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75fba",\
+                #                 callback=self.received_data_cb,\
+                #                 indication=False)
         else:
             print("Key Interface choosen")
 #            self.connectToRttServer()
