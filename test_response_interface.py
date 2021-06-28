@@ -71,6 +71,7 @@ class interface():
     """
     def connectToInterface(self):
         if self.ble_interface == True:
+            print("BLE Interface Choosen")
             adapter = pygatt.GATTToolBackend(search_window_size=200)
             adapter.start()
             device_info = adapter.filtered_scan(self.device_addr, timeout=1)
@@ -98,7 +99,8 @@ class interface():
                 self.device.subscribe("ed0ef62e-9b0d-11e4-89d3-123b93f75fba",\
                                 callback=self.received_data_cb,\
                                 indication=False)
-#        else:
+        else:
+            print("Key Interface choosen")
 #            self.connectToRttServer()
 #            rttThread = threading.Thread(target=self.retrieveRttData)
 #            rttThread.start()
@@ -150,7 +152,7 @@ class interface():
                 try:
                     self.data_queue[1].put((data,))
                     # self.logger.debug(data)
-                    # print(data)
+                    print(data)
                 except Exception as e:
                     print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
 
