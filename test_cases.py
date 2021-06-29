@@ -48,7 +48,7 @@ class test_cases():
                 results =  False
         else:
             self.ble.sendCommand(0x02)
-            time.sleep(0.5)
+            time.sleep(2) #To let the VIM process ride details
             self.ble.sendCommand(0x06)
             if(self.parser.getLockResult(wait_time) == False):
                 self.log.debug('Lock Failed') #Lock Failed
