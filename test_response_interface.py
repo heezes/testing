@@ -119,9 +119,9 @@ class interface():
                 self.opcode_response = None
                 self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([command]), True)
                 # while self.opcode_response == None:
-                #     time.sleep(0.5)
-                #     pass
-                # print("Response %s"%self.opcode_response)
+                time.sleep(1.5)
+                    # pass
+                print("Opcode Response %s"%self.opcode_response)
                 # return self.opcode_response
                 return True
             else:
