@@ -121,7 +121,7 @@ class interface():
                 # while self.opcode_response == None:
                 time.sleep(1.5)
                     # pass
-                print("Opcode Response %s"%self.opcode_response)
+                print("Opcode Response "+str(self.opcode_response))
                 # return self.opcode_response
                 return True
             else:
