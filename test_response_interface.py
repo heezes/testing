@@ -42,6 +42,7 @@ class interface():
     def data_handler_cb(self, handle, value):
         try:
             self.opcode_response = value.decode("utf-8")
+            print("Received response"+ value.decode("utf-8"))
         except Exception as e:
             print('Error on line {}'.format(sys.exc_info()[-1].tb_lineno), type(e).__name__, e)
 
@@ -119,9 +120,9 @@ class interface():
                 self.opcode_response = None
                 self.device.char_write("ed0ef62e-9b0d-11e4-89d3-123b93f75dba", bytearray([command]), True)
                 # while self.opcode_response == None:
-                time.sleep(1.5)
+                # time.sleep(1.5)
                     # pass
-                print("Opcode Response "+str(self.opcode_response))
+                # print("Opcode Response "+str(self.opcode_response))
                 # return self.opcode_response
                 return True
             else:
